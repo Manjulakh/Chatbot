@@ -1,0 +1,2328 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can answer few of your questions"],
+         "context": [""]
+        },
+        {"tag": "Mount_Everest",
+         "patterns": ["Who is the first person to reach Mount Everest?", "The first person who climbed Mount Everest", "Who Climbed Mount Everest First?", "Person Climbed Mount Everset First", "Who is the person who climbed Mount Everest first?" ],
+         "responses": ["Sherpa Tensing, Edmund Hillary", "The first person who climbed Mount Everest is Sherpa Tensing and Edmund Hillary", "Sherpa Tensing and Edmund Hillary", "Sherpa Tensing and Edmund Hillaryclimbed Mount Everest first"],
+         "context": [""]
+        },
+        {"tag": "President_of_the_U.S.A.",
+         "patterns": ["Who is the first President of the U.S.A.?", "the first President of the U.S.A.", "Who is U.S.A. first President", "First President U.S.A", "Name of the first President of U.S.A" ],
+         "responses": ["George Washington", "the first President of the U.S.A. is George Washington", "U.S.A. first President is George Washington", "George Washington is the first president of the U.S.A"],
+         "context": [""]
+        },
+        {"tag": "biggest_population_in_Europe",
+         "patterns": ["Which is the country with the biggest population in Europe?", "the country with the biggest population in Europe", "In Europe the country with the biggest population", "Biggest Population country in Eroupe"],
+         "responses": ["the country with the biggest population in Europe is Russia","Russia", "Russia is the country with the biggest population in Europe","Biggest Population country in Eroupe is russia"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "Lightest_Gas",
+         "patterns": ["Which one of the following is the lightest gas?", "the lightest gas is", " Which is the Lighest Gas?", "Lighest Gas in the world?"],
+         "responses": ["Hydrogen", "the lightest gas is hydrogen", "Hydrogen is the Lighest Gas"],
+         "context": [""]
+        },
+        {"tag": "states_in_USA",
+         "patterns": ["The USA consists of how many states?", "how many states are there in USA", "The total number of states in USA", "States in USA"],
+         "responses": ["50", "Fifty", "There are 50 states in USA", "The total number of states in USA are 50"],
+         "context": [""]
+        },
+        {"tag": "Plants_exhale",
+         "patterns": ["Plant exhale which gas at night?", "which gas Plants exhale at night?","Name of the gas that exhales by Plants ","What do plants breathe in at night?"],
+         "responses": ["Plant exhale Carbon dioxide at night", "Carbon dioxide", "plants breathe in Carbon dioxide at night"],
+         "context": [""]
+        },
+        {"tag": "Chancellor",
+         "patterns": ["Chancellor is the head of state in?", "Name of the countries where chancellor is head of the state", "In which countries chancellor is the head of the state?", "Country where chancellor is head of state"],
+         "responses": ["Germany,Austria", "Germany and Austria", "Germany and Austria are the countries where chancellor is the head of the state","The countries where chancellor is head of the state are Germany and Austria"],
+         "context": [""]
+        },
+        {"tag": "Paper_currency",
+         "patterns": ["First country who issued paper currency notes in the world?", "which country issued paper currency first?", "The first country which issued paper currecy", " who issued paper currency notes in the world for the first time"],
+         "responses": ["China", "First country who issued paper currency notes in the world is china", "China issued paper currency first", "The first country which issued paper currecy is China"],
+         "context": [""]
+        },
+        {"tag": "biggest_freshwater_lake",
+         "patterns": ["Which one is the biggest freshwater lake ( areawise) in the world?", "the biggest freshwater lake in the world", "Worlds Biggest lake of frehwater", "In the world the biggest freshwater lake is"],
+         "responses": ["the biggest freshwater lake ( areawise) in the world is Lake Superior", "Lake Superior", "Worlds Biggest lake of frehwater is Lake Superior", "In the world the biggest freshwater lake is Lake Superior"],
+         "context": [""]
+        },
+        {"tag": "brightest_Planent",
+         "patterns": ["Which one is the brightest planet in the solar system?", "the brightest planet in the solar system?", "in the solar system which is the brightest planent", "Brightest planent of the solar system"],
+         "responses": ["Venus","Venus is the brightest planent in the solar system", "Venus is the brightest planent","Brightest planent of the solar system is Venus"],
+         "context": [""]
+        },
+        {"tag": "Largest_Animal",
+         "patterns": ["Which one is the largest animal in the world?", "the largest animal in the world", " Worlds largest animal is?"],
+         "responses": ["The largest animal in the world is Blue Whale", "Blue Whale", "Worlds Largest aniaml is Blue Whale"],
+         "context": [""]
+        },
+        {"tag": "mountain_Roof_of_the_world",
+         "patterns": ["Which mountain range is also known as Roof of the world?", "the mountain known as roof of the range is", "Roof of the world mountain range", "the mountain called as roof of the range"],
+         "responses": ["Pamirs", "Pamirs mountain range is also known as Roof of the world", "Roof of the world mountain range is pamirs", "The mountain range pamirs is also known as roof of the world"],
+         "context": [""]
+        },
+        {"tag": "wikipedia",
+         "patterns": ["Who is the founder of Wikipedia?", "wikipedia is founded by?","the founder of wikipedia","name of the wikipedia founder?"],
+         "responses": ["Jimmy Wales", "the founder of Wikipedia is jimmy Wales", "name of the wikipedia founder is jimmy wales", "wikipedia is founded by jimmy wales"],
+         "context": [""]
+        },
+        {"tag": "national_symbol",
+         "patterns": ["Dragon is the national symbol of?", "Which country as dragon as there national symbol?", "country with dragon as national symbol?", "Dragon is the national symbol of which country"],
+         "responses": ["China", "Dragon is the national symbol of china", "china as dragon as there national symbol","china with dragon as national symbol"],
+         "context": [""]
+        },
+        {"tag": "Largest_Continent",
+         "patterns": ["The largest continent ( Area wise) is?", "Which is the largest continent in the world?", "worlds largest continent is", "the largest continent in the world"],
+         "responses": ["Asia", "The largest continent is Asia", "The largest continent in the world is Asia", "worlds largest continent is Asia"],
+         "context": [""]
+        },
+        {"tag": "World_trade_organization",
+         "patterns": ["World Trade Organization came into existence in?", "when did world trade organization found?", "World organization was founded in", "world organisation started in"],
+         "responses": ["1995", "World Trade Organization came into existence in 1995", "world trade organization foundedin 1995", "world organisation started in 1995"],
+         "context": [""]
+        },
+        {"tag": "Largest_Animal",
+             "patterns": ["Which one is the largest animal in the world?", "the largest animal in the world", " Worlds largest animal is?"],
+             "responses": ["The largest animal in the world is Blue Whale", "Blue Whale", "Worlds Largest aniaml is Blue Whale"],
+             "context": [""]
+        },
+        {"tag": "crop",
+            "patterns": ["Which crop is sown on the largest area in India?", "which is widely grown crop in india?","Largest crop grown in india?", "India's largest grown crop is"],
+            "responses": ["Rice", "Rice is sown on the largest area in India", "the widely crop grown in india is rice", "India's largest grown crop is rice"],
+            "context": [""]
+        },
+        {"tag":"FFC",
+        "patterns": ["FFC stand for?", "Full form of FFC?", "What is the full form of FFC", "FFC menas"],
+             "responses": ["Film Finance Corporation", "FFC stands for Film Finance Corporation", "The full for of FFC is Film Finance Corporation", " FFC means Film Finance Corporation"],
+             "context": [""]
+            },
+        {"tag": "space_agence",
+             "patterns": ["Which space agency sends 104 satellites in a single mission in 2017??", "space agency that sent 104 satellites in single mission", "space agency sends 104 satellites?", "In single mission the sapce agency that sent 104 satellites"],
+             "responses": ["ISRO", "Indian Space Research Organization", "space agency that sent 104 satellites in single mission is ISRO","ISRO space agency sends 104 satellites"],
+             "context": [""]
+         },
+         {"tag": "Germany_attack_France",
+             "patterns": ["During World War II, when did Germany attack France?", "When did Gremany attack france during world war II", "germany attack france world war II", "when was france attacked by germany during world war II"],
+             "responses": ["1940", "During World War II, Germany was attacked france in 1940", "Germany was attacked france in 1940", "Gremany attack france during world war II in 1940"],
+             "context": [""]
+         },
+     {"tag": "Planet_Orbit",
+         "patterns": ["Which planet takes around 3 Earth months to orbit the Sun?", "planet takes 3 earth months to orbit the sun?","to orbit the sun which plant takes 3 earth months?"],
+         "responses": ["Mercury", "Mercury takes around 3 Earth months to orbit the Sun ", "to orbit the sun mercury takes e earth months"],
+         "context": [""]
+      },
+      {"tag": "mammal_fly",
+         "patterns": ["What is the only mammal on Earth that can actively fly?", "only mammal that can fly?","Which mammal can fly?", "Flying mammal on the eart"],
+         "responses": ["Bat", "the only mammal on Earth that can actively fly is Bat", "Bat can fly", "Flying mammal on earth is Bat"],
+         "context": [""]
+      },
+      {"tag": "meters_hectare",
+           "patterns": ["How many square meters are there in a hectare?", "square meters in hectare","hectare has how many square meter", "square meter hectare"],
+           "responses": ["10,000", "Ten Thousand", "10,000 square meters are there in a hectare", "square meters in hectare are 10,000"],
+           "context": [""]
+      },
+      {"tag": "Iron_Lady",
+           "patterns": ["What famous woman was nicknamed The Iron Lady?", "The Iron Lady","Who is called as The Iron Lady", "Women called as Iron Lady"],
+           "responses": ["Margaret Thatcher", "Margaret Thatcher was nicknamed The Iron Lady", "Margaret Thatcher is called as The Iron Lady", "famous woman Margaret Thatcher was nicknamed The Iron Lady"],
+           "context": [""]
+      },
+      {"tag":"Computer_Mouse_Inventor",
+           "patterns": ["What is the name of the man who invented the computer mouse?", "who invented computer mouse","computer mouse was invented by", "inventor of the computermouse"],
+           "responses": ["Doug Englebart", "the name of the man who invented the computer mouse is Doug Englebart", "Doug Englebart invented computer mouse", "computer mouse was invented by Doug Englebart", "Doug Englebart was the inventor of the computer mouse"],
+           "context": [""]
+      },
+      {"tag": "Lightning_Conductor",
+           "patterns": ["Who invented the lightning conductor?", "lightning conductor was invented by","lightning conductor inventor ", "Lightning conductor found by"],
+           "responses": ["Benjamin Franklin", "Benjamin Franklin invented the lightning conductor", "lightning conductor was invented by Benjamin Franklin", "Lightning conductor found by Benjamin Franklin"],
+           "context": [""]
+      },
+      {"tag":"Computer_Mouse_Inventor",
+           "patterns": ["What is the name of the man who invented the computer mouse?", "who invented computer mouse","computer mouse was invented by", "inventor of the computermouse"],
+           "responses": ["Doug Englebart", "the name of the man who invented the computer mouse is Doug Englebart", "Doug Englebart invented computer mouse", "computer mouse was invented by Doug Englebart", "Doug Englebart was the inventor of the computer mouse"],
+           "context": [""]
+      },
+      {"tag":"coal_composed",
+           "patterns": ["Which element is coal mainly composed of?", "coal mainly composed with","coal composed mainly with which element"],
+           "responses": ["carbon", "the coal mainly composed of carbon", "", "coal mainly composed with carborn"],
+           "context": [""]
+      },
+      {"tag":"scared_river",
+           "patterns": ["What is the name of the most sacred river in India?", "sacred river in india","name of the river which is scared in india"],
+           "responses": ["Ganga", "Ganga is the name of the most scared river in india", "scared river in india is ganga ", "Ganag is scared river in india"],
+           "context": [""]
+      },
+      {"tag":"ADSL",
+           "patterns": ["What does the computer abbreviation ADSL stand for?", "ADSL stands for","abbreviation of ADSL", "ADSL meaning"],
+           "responses": ["Asymetric Digital Subscriber Line", "the computer abbreviation ADSL stand for Asymetric Digital Subscriber Line", "abbreviation of ADSL is Asymetric Digital Subscriber Line", "ADSL means Asymetric Digital Subscriber Line"],
+           "context": [""]
+      },
+      {"tag":"Mount_Vesuvius",
+           "patterns": ["In which country is Mount Vesuvius located?", "Mount Vesuvius located in","Mount Vesuvius is located in which country"],
+           "responses": ["Italy", "Mount Vesuvius is located in Italy", "In Italy Mount Vesuvius is located"],
+           "context": [""]
+      },
+      {"tag":"microphone",
+           "patterns": ["Who invented the microphone?", "microphone was invented by","inventor of the microphone"],
+           "responses": ["Emile Berliner", "Emile Berliner invented the microphone", "inventor of the microphone is Emile Berliner"],
+           "context": [""]
+      },
+      {"tag":"Biggest_Spider",
+           "patterns": ["What is the biggest spider in the world?", "biggest spider in the world","world's biggest spider"],
+           "responses": ["Goliath birdeater", "the biggest spider in the world is Goliath birdeater", "worlds biggest spider is Goliath birdeater"],
+           "context": [""]
+      },
+      {"tag":"piano_keys",
+           "patterns": ["How many keys does a standard full size piano have?", "number of keys in full size piano","piano keys count"],
+           "responses": ["88", "Eighty Eight", "standard full size piano have Eighty Eight keys", "88 keys in piano"],
+           "context": [""]
+      },
+      {"tag":"electrical_Light",
+           "patterns": ["Which English scientist invented the electric light?", "electrical light was invented by","scientist who invented electrical light"],
+           "responses": ["Humphry Davy", "Humphry Davy invented the electrical light", "electrical light was invented by Humphry Davy", "The scientist who invented electrical light is Humphry Davy"],
+           "context": [""]
+      },
+      {"tag":"nuclear_reactor",
+           "patterns": ["Where was the first nuclear reactor built?", "first nuclear reactor was build in","the place where first nuclear reactor build"],
+           "responses": ["USA", "United States of America", "The first nuclear reactor was built in USA"],
+           "context": [""]
+      },
+      {"tag":"mammal_kneel_on_four_legs",
+           "patterns": ["Which is the only mammal that able to kneel on all fours?", "only mammal kneel on four legs"],
+           "responses": ["Elephant", "the only mammal that abel to kneel on all four is Elephant", "only Elephant mammal can kneel on four legs"],
+           "context": [""]
+      },
+      {"tag":"state_of_liberty",
+           "patterns": ["Who designed the Statue of Liberty?", "state of liberty was designed by","name the person wo designed the state of liberty"],
+           "responses": ["Bartholdi", "Bartholdi designed The State of Liberty ", "state of liberty was designed by Bartholdi"],
+           "context": [""]
+      },
+      {"tag":"femal_Governer",
+           "patterns": ["Who was the first female governor of India?", "first femal governerof india","india's first female governer"],
+           "responses": ["Sarojini Naidu", "The first female governer of india was Sarojini Naidu", "india's first femal governer was Sarojini Naidu"],
+           "context": [""]
+      },
+      {"tag":"largest_crocodile",
+           "patterns": ["Which is the largest species of crocodile?", "largest crocodile","crocodile's largest species"],
+           "responses": ["Saltwater", "The Largest Species of Crocodile is Saltwater", "Saltwater is the largest species of the crocodile"],
+           "context": [""]
+      },
+      {"tag":"largest_island_Caribbean",
+           "patterns": ["What is the largest island in the Caribbean?", "largest island in caribbean","which is the largest island in Caribbean"],
+           "responses": ["Cuba", "Cuba is the largest island in the Caribbean?", "The largest island in Caribbean is cuba"],
+           "context": [""]
+      },
+      {"tag":"prime_minister_died",
+           "patterns": ["Which former British Prime Minister died in 2013?", "British Prime Minister died in 2013?","In 2013, which former british prime minister died"],
+           "responses": ["Margaret Thatcher", "former British Prime Minister died in 2013 was Margaret Thatcher", "In 2013, the british prime minister died was Margaret Thatcher "],
+           "context": [""]
+      },
+      {"tag":"Pi_Day",
+           "patterns": ["When is Pi Day celebrated across the world?", "Pi Day Celebrated on","In the world the pi day celebrates on"],
+           "responses": ["March 14th", "March 14th is celebrated as  Pi Day across the world", "The Pi Day is celebrated on March 14th"],
+           "context": [""]
+      },
+      {"tag":"Sargasso_Sea",
+           "patterns": ["In which major ocean is the Sargasso Sea situated?", "the Sargasso Sea situated in","Sargasso Sea situated in which ocean"],
+           "responses": ["The North Atlantic Ocean", "the Sargasso Sea situated in The North Atlantic Ocean", "In The North Atlantic Ocean The Sargasso Sea is Situated"],
+           "context": [""]
+      },
+      {"tag":"feet_in_yard",
+           "patterns": ["How many feet are there in a yard?", "yard has how many feet","number of feets in yard"],
+           "responses": ["3", "Three", "Three feets are there in yard","yard has three feet"],
+           "context": [""]
+      },
+      {"tag":"country_flag",
+           "patterns": ["Which country's flag has order of green, white, red?", "country flag with green, white and red?"],
+           "responses": ["Italy", "Italy flag has order of green, white, red", "Italy has The country flag with green, white and red"],
+           "context": [""]
+      },
+      {"tag":"birth_stone",
+           "patterns": ["What is the birthstone of the Gemini star sign?", "birth stone of gemini","Gemini star sign birth stone"],
+           "responses": ["pearl", "Pearl isthe birthstone of the Gemini star sign", "birth stone of gemini star is pearl"],
+           "context": [""]
+      },
+      {"tag":"US_States_With_A",
+           "patterns": ["How many US states begin with the letter A?", "US states begins with A","number of US states beign with A"],
+           "responses": ["4", "Four", "Four US states begin with the letter A", "Four: Alabama, Alaska, Arizona and Arkansas"],
+           "context": [""]
+      },
+      {"tag":"Official_language",
+           "patterns": ["What is the official language of Chile?", "which is the official language of chile","Chile official Language"],
+      "responses": ["Spanish", "Spanish is the official language of chile", "chile official language is spanish"],
+           "context": [""]
+      },
+      {"tag":"Government",
+           "patterns": ["what is a government?", "what do you mean by government?","Government","Government means"],
+           "responses": ["ideally it is a representative of the people", "representative of the people", "the governing body of a nation,state or community"],
+           "context": [""]
+      },
+      {"tag":"Green_peace",
+           "patterns": ["what is a greenpeace?", "what do you mean by greenpeace?","Green Peace","Greenpeace stands for"],
+           "responses": ["global organization promoting enviornmental activism.", "Greenpeace is a non-governmental environmental organization"],
+           "context": [""]
+      },
+      {"tag":"capitalism",
+           "patterns": ["what is capitalism?", "capitalism means?","what do you mean by capitalism?","capitalism defination"],
+           "responses": ["an economic and political system in which a country's trade and industry are controlled by private owners for profit, rather than by the state"],
+           "context": [""]
+      },
+      {"tag":"impeached_president",
+           "patterns": ["who was the first impeached president of USA?", "first impeached president of USA?","USA first impeached president","name the first impeachement president"],
+           "responses": ["andrew jackson", "Andrew Jackson was the first impeached president of USA", "first impeached president of USA was Andrew Jackson"],
+           "context": [""]
+      },
+      {"tag":"socialism",
+           "patterns": ["what is socialism", "socialism?","socialism means","definition of socialism"],
+           "responses": ["policy or practice based on the political and economic theory of socialism.", "a political and economic theory of social organization which advocates that the means of production, distribution, and exchange should be owned or regulated by the community as a whole"],
+           "context": [""]
+      },
+      {"tag":"communism",
+           "patterns": ["what is communism?", "communism means?","communism in politics","communism"],
+           "responses": ["Communism is a social political movement. Its aim is to set up a version of society based on the common ownership of the means of production and would not rely on social classes, or money."],
+           "context": [""]
+      },
+      {"tag":"Elizabeth_son",
+           "patterns": ["What is the name of Queen Elizabeth II’s youngest son?", "Queen Elizabeth II’s youngest son","youngest son of Queen Elizabeth II"],
+           "responses": ["Edward.", "the name of Queen Elizabeth II’s youngest son is Edward", "Edward is the youngest son of Queen Elizabeth II"],
+           "context": [""]
+      },
+      {"tag":"Labor_Prime_Minister",
+           "patterns": ["Who was the first Labor Prime Minister to form government in 1924?", "the first Labor Prime Minister to form government in 1924?","the first Labor Prime Minister to form government"],
+           "responses": ["Ramsay MacDonald.", "the first Labor Prime Minister to form government in 1924 was Ramsay MacDonald"],
+           "context": [""]
+      },
+      {"tag":"first_non-Communist_Polish_Prime_Minister",
+           "patterns": ["Who became the first non-Communist Polish Prime Minister since the 2nd world war in 1939?", "first non-Communist Polish Prime Minister since the 2nd world war","after second world war the first non-Communist Polish Prime Minister"],
+           "responses": [" Tadeusz Mazowiecki.", "the first non-Communist Polish Prime Minister since the 2nd world war was Tadeusz Mazowiecki.", "after second world war the first non-Communist Polish Prime Minister was Tadeusz Mazowiecki."],
+           "context": [""]
+      },
+      {"tag":" woman_Prime_Minister_Israel",
+           "patterns": ["Name the first woman Prime Minister of Israel?", "first woman Prime Minister of Israel","Israel's first woman prime minister"],
+           "responses": [" Golda Meir", "the first woman Prime Minister of Israel was Golda Meir", "Israel's first woman prime minister Golda Meir"],
+           "context": [""]
+      },
+      {"tag":"Irish_Parliment",
+           "patterns": ["What is the name of the National Parliament of the Irish Republic?", "name of the National Parliament of the Irish Republic","Irish RepublicNational Parliament name","irish parliment name"],
+           "responses": ["Dail Eireann", "Irish RepublicNational Parliament name is Dail Eireann", "the name of the National Parliament of the Irish Republic is Dail Eireann"],
+           "context": [""]
+      },
+      {"tag":"O.A.U",
+           "patterns": ["In the World of International Alliances what is O. A. U?", "O A U stands for","Abbrivation of O A U","O A U"],
+           "responses": ["The organization of African Unity", "organization of African Unity", "O A U stands for organization of African Unity", "Abbrivation of O A U is organization of African Unity"],
+           "context": [""]
+      },
+      {"tag":"Icelandic_Parliment",
+           "patterns": ["What is the Icelandic Parliament called?", "the Icelandic Parliament called","name of Icelandic parliment","Icelandic PArliment is called as"],
+           "responses": ["The Althing.", "the Icelandic Parliament called as The Althing", "Icelandic PArliment is called as The Althing"],
+           "context": [""]
+      },
+      {"tag":"two_parties_Ireland",
+           "patterns": [" What are the two main political parties in the Republic of Ireland called?", "two main political parties in the Republic of Ireland called","Ireelands two main political parties"],
+           "responses": ["Fianna Fail and Fine Gael", "Fianna Fail and Fine Gael are the two main political parties in the Republic of Ireland called", "Ireelands two main political parties are Fianna Fail and Fine Gael"],
+           "context": [""]
+      },
+      {"tag":"French_President_elected",
+           "patterns": [" For how many years is a French President elected?", "French President elected for how many years","how many years once the french president is elected","french president is elected once in how many years"],
+           "responses": ["7", "Seven years.", "Seven years once the french president is elected", "French president is elected for seven year once"],
+           "context": [""]
+      },
+      {"tag":"founder_of_CDU",
+           "patterns": ["Who was the founder of Christian Democratic Union (CDU) in West Germany?", "founder of CDU in Germany?","CDU in Germany was founded by","CDU was started by"],
+           "responses": ["Konrad Adenauer.", "the founder of Christian Democratic Union (CDU) in West Germany was Konrad Adenauer", "founder of CDU in Germany was Konrad Adenauer", "CDU was started by Konrad Adenauer"],
+           "context": [""]
+      },
+      {"tag":"President_Turkey",
+           "patterns": ["Who was the first President of Turkey?", "first President of Turkey","Turkey's first president"],
+           "responses": ["Kemal Ataturk", "the first President of Turkey was Kemal Ataturk", "Turkey's first president was Kemal Ataturk"],
+           "context": [""]
+      },
+      {"tag":"youngest_prime_minister_canada",
+           "patterns": ["Who was the youngest Prime Minister in the history of Canada?", "Canada's youngest Prime Minister","the youngest Prime Minister in the history of Canada","name of the youngest prime minister of canada"],
+           "responses": ["Joe Clark", "the youngest Prime Minister in the history of Canada was Joe Clark", "Canada's youngest Prime Minister Joe Clark", "Joe Clark was the youngest prime minister"],
+           "context": [""]
+      },
+      {"tag":"Indian_fifitten_year_PM",
+           "patterns": ["For fifteen years, who was India’s Prime Minister?", "who was India’s Prime Minister for fitten years","name of the prime minister who was prime minister for fitten years"],
+           "responses": ["Indira Gandhi.", "For fifteen years,Indira Gandhi was India’s Prime Minister", "Indira Gandhi  was India’s Prime Minister for fitten years"],
+           "context": [""]
+      },
+      {"tag":"king_Ethiopia",
+           "patterns": [" Who was the last king of Ethiopia?", "last king of Ethiopia","Ethiopia's last king","name of the last king of Ethiopia"],
+           "responses": ["Haile Selassie", " the last king of Ethiopia was Haile Selassie", "Ethiopia's last king was Haile Selassie"],
+           "context": [""]
+      },
+      {"tag":"Indonesia_first_president",
+           "patterns": ["Who was the first president of Indonesia?", "the first president of Indonesia","Indonesia's first president"],
+           "responses": ["Sukarno", "the first president of Indonesia was Sukarno", "Indonesia's first president was Sukarno"],
+           "context": [""]
+      },
+      {"tag":"Democratism_spain",
+           "patterns": ["Who rebuilt the Democratism of Spain?", "name of the person who built democratism of spain","founder of the democratism of spain"],
+           "responses": ["Juan Carlos", "Juan Carlos rebuilt the Democratism of Spain","founder of the democratism of spain was Juan Carlos"],
+           "context": [""]
+      },
+      {"tag":"Belgian_congo_President",
+           "patterns": [" Who ?", "the first President of independent Belgian Congo","Independent Belgian Congo's first president"],
+           "responses": ["Joseph Kasavubu", "Joseph Kasavubu was the first President of independent Belgian Congo", "Independent Belgian Congo's first president was Joseph Kasavubu"],
+           "context": [""]
+      },
+      {"tag":"Banned_Slavery",
+           "patterns": [" Who banned slavery in America?", "name of the person who banned the slavery in america","slavery in america was banned by"],
+           "responses": ["Abraham Lincoln.", "Abraham Lincoln. banned slavery in america", "Slavery in america was banned by Abraham Lincoln."],
+           "context": [""]
+      },
+      {"tag":"Japan_Price",
+           "patterns": ["Who was the Prince of Japan?", "the Prince of Japan","name of the prince of japan","Japan's prince"],
+           "responses": ["Prince Naruhito", "Prince Naruhito was the Prince of japan", "Japan's prince is Prince Naruhito"],
+           "context": [""]
+      },
+      {"tag":"Lambeth_Palace",
+           "patterns": ["Who lived at Lambeth Palace?", "name of the person who lived in Lambeth Palace?","person who lived in Lambeth Palace"],
+           "responses": ["The Archbishop of Canterbury.", "The Archbishop of Canterbury lived in Lambeth_Palace"],
+           "context": [""]
+      },
+      {"tag":"Dictator_cuba",
+           "patterns": ["Who is the dictator of Cuba?", "the dictator of Cuba?","cuba's dictator"],
+           "responses": ["Fidel Castro", "Fidel Castro is the dictator of Cuba ", "cuba's dictator is Fidel Castro"],
+           "context": [""]
+      },
+      {"tag":"Berlin_Built",
+           "patterns": ["In what year was the Berlin wall built?", "which year berlin wall built","Berlin wall was built in"],
+           "responses": ["In the year 1961", "1961", "the Berlin wall was built in 1961", "In 1961 the Berlin wall was built"],
+           "context": [""]
+      },
+      {"tag":"American_President_Live",
+           "patterns": ["In which house does the American president live?", "The americn president live in which house?","American Pesident Live in"],
+           "responses": ["The White House", "The American President live in The White House", "In White House the President live"],
+           "context": [""]
+      },
+      {"tag":"One_dollar_bill",
+           "patterns": ["Which American president appears on a one dollar bill?", "american president on one dollar bill?"],
+           "responses": ["George Washington", "American President George Washington appears on a one dollar bill"],
+           "context": [""]
+      },
+      {"tag":"orange_revolution",
+           "patterns": ["In which country happened the Orange Revolution between 2004-2005?", "Orange Revolution between 2004-2005 happened in which country?"],
+           "responses": ["Ukraine", "Orange Revolution between 2004-2005 happened in Ukraine", "In Ukraine the Orange Revolution happened between 2004-2005"],
+           "context": [""]
+      },
+      {"tag":"British_PM_murdered",
+           "patterns": ["Who is the only British Prime Minister to be murdered?", "the only British Prime Minister to be murdered?","the prime minister murdered in british "],
+           "responses": ["Spencer Percival", "the only British Prime Minister to be murdered is Spencer Percival", "the prime minister murdered in british is Spencer Percival"],
+           "context": [""]
+      },
+      {"tag":"Mount_Rushmore",
+           "patterns": ["How many heads of presidents are carved into Mount Rushmore?", "Mount Rushmore has how many president heads?"],
+           "responses": ["4", "four", "Mount Rushmore has four president heads"],
+           "context": [""]
+      },
+      {"tag":"German_zeppelin",
+           "patterns": ["Which German Count invented the zeppelin?", "zeppelin was invented by"],
+           "responses": ["Count Von Zeppelin", "Zeppelin was invented by Count Von Zeppelin "],
+           "context": [""]
+      },
+      {"tag":"lower_house_British",
+           "patterns": ["Which is the lower house of the British parliment?", "the lower house of the British parliment is called as?","British parliment's lower house is called as"],
+           "responses": ["House of Commons", "the lower house of the British parliment is House of Commons", "House of Commons is the lower house of the british parliment"],
+           "context": [""]
+      },
+      {"tag":"USA_VP_1990",
+           "patterns": ["Who was the USA's vice president in 1990?", "the USA's vice president in 1990?","In 1990 who is the vice president of USA"],
+           "responses": ["Dan Quayle", "the USA's vice president in 1990 was Dan Quayle", "Dan Quayel was the USA's vice president in 1990"],
+           "context": [""]
+      },
+      {"tag":"long_time_in_Politics",
+           "patterns": ["Who said A week is a long time in politics?", "the person who said A week is a long in politics ","A week is a long time in Politics is said by"],
+           "responses": ["Harold Wilson", " Harold Wilson said A week is a long time in politics", "A week is a long time in Politics is said by Harold Wilson"],
+           "context": [""]
+      },
+      {"tag":"Royal_Marine_commando",
+           "patterns": ["Which party leader was a Royal Marine commando?", "Royal Marine commando was leader of which party"],
+           "responses": ["Paddy Ashdown", " Royal Marine commando was a leader of Paddy Ashdown party."],
+           "context": [""]
+      },
+      {"tag":"first_domocratic_elections",
+           "patterns": ["What country held its first democratic elections on January 30, 2005?", "first democratic elections on January 30, 2005 was held by?"],
+           "responses": ["IRAQ", "Iraq held its first democratic elections on January 30, 2005"],
+           "context": [""]
+      },
+      {"tag":"Iron_chancellor",
+           "patterns": ["What German political leader was known as the Iron Chancellor?", "Iron Chancellor?","name of the person known as Iron Chancellor"],
+           "responses": ["Otto von Bismarck", "Otto von Bismarck was known as Iron Chancellor"],
+           "context": [""]
+      },
+      {"tag":"Government",
+       "patterns": ["what is a government?", "what do you mean by government?","Government","Government means"],
+           "responses": ["ideally it is a representative of the people", "representative of the people", "the governing body of a nation,state or community"],
+           "context": [""]
+      },
+      {"tag":"United_State_Capital",
+           "patterns": ["What is the capital of the United States?", "capital of the United States?","United State's capital"],
+           "responses": ["Washington", "Washington is the capital of the United State", "The capital of the United State is Washington"],
+           "context": [""]
+      },
+      {"tag":"Capital_India",
+           "patterns": ["what is the capital of India?", "india's capital?","which is the capital of India"],
+           "responses": ["New Delhi", "New Delhi is the capital of India", "India's capital is New Delhi"],
+           "context": [""]
+      },
+      {"tag":"Politics",
+           "patterns": ["what is Politics?", "what do you mean by Politics?","Politics defination"],
+           "responses": ["the activities of governments concerning the political relations between countries.", "the academic study of government and the state."],
+           "context": [""]
+      },
+      {"tag":"Belgium_Language",
+           "patterns": ["What is the most spoken language in Belgium?", "the most spoken language in Belgium","Belgium's most spoken Language"],
+           "responses": ["Dutch", "Dutch Language", "The most spoken language in belgium is dutch", "Belgium's most spoken language is Dutch"],
+      "context": [""]
+      },
+      {"tag":"Portuguese_Dictator",
+           "patterns": ["Who was the Portuguese dictator at the time of Franco?", "the Portuguese dictator at the time of Franco"],
+           "responses": ["Salazar", "Salazar was the Portuguese dictator at the time of Franco", "the Portuguese dictator at the time of Franco was Salazar"],
+           "context": [""]
+      },
+      {"tag":"British_suffrage_women",
+           "patterns": ["How were called the British women who fought for women's suffrage?", "the British women who fought for women's suffrage called as"],
+           "responses": ["Sufragettes","the British women who fought for women's suffrage are called as Sufragettes"],
+           "context": [""]
+      },
+      {"tag":"Iraq_Dictator",
+           "patterns": ["Who was the dictator of Iraq?", "the dictator of Iraq","Iraq's dictator","Name of the person who dectated Iraq brutaliy"],
+           "responses": ["Saddam Hussain", "Saddam Hussain  was the dictator of Iraq", "Iraq's dictator was Saddam Hussain"],
+           "context": [""]
+      },
+      {"tag":"Australia_capital",
+           "patterns": ["What is the capital of Australia?", "the capital of Australia is","Australia's Capital","Greenpeace stands for"],
+           "responses": ["Canberra", "the capital of Australia is Canberra", "Australia's Capital is Canberra"],
+           "context": [""]
+      },
+      {"tag":"Australia_Government",
+           "patterns": ["What is Australia’s form of government?", "Australia’s form of government is called as?","The form of government in australia is"],
+           "responses": ["Monarchy", "Australia’s form of government is Monarchy", "Australia’s form of government is called as Monarchy"],
+           "context": [""]
+      },
+      {"tag": "World_War",
+           "patterns": ["World War I began in which year?", "in which year World War one started", "World War one started in year?"],
+           "responses": ["1914", "World war 1 started in 1914", "its started in 1914"],
+           "context": [""]
+       },
+      {"tag": "Adolf_Hitler",
+       "patterns": ["Adolf Hitler was born in which country?", "Which is birth country of Adolf Hitler", "Adolf Hitler born in country ?"],
+       "responses": ["He is born in Austria", "He is by birth Austria", "Austria is birth country of Adolf Hitler"],
+       "context": [""]
+      },
+      {"tag": "I_shall_return",
+       "patterns": ["Which general famously stated 'I shall return?'", "I shall return famously stated by?", "Who gave a famous slogan I shall return?", "I Shall return by?"],
+       "responses": ["Douglas MacArthur ", "Douglas MacArthur quoted this famous slogan", "It is from General Douglas MacArthur "],
+       "context": [""]
+      },
+      {"tag": "Korean_War",
+       "patterns": ["American involvement in the Korean War took place in which decade?","Korean War happened in decade?","America got into Korean War in decade"],
+       "responses": ["1950s", "America involved in 1950s", "1950s America entered Korean War"],
+       "context": [""]
+      },
+      {"tag": "Battle_of_Hastings",
+       "patterns": ["The Battle of Hastings in 1066 was fought in which country?", "Battel of Hastings happened in country", "Country in which Battle of Hastings fought?", "Battel of hastings fought in year", "Battel of Hastings year?"],
+       "responses": ["England", "Battele of Hastings fought in England","It happened in England","1066 England"],
+       "context": [""]
+      },
+      {"tag": "Magna Carta",
+       "patterns": ["The Magna Carta was published by the King of which country?", "Magna Carta published in year?", "Magna Carta created in year?", "Who issued Magna Carta?"],
+       "responses": ["England","Issued in country England in 1215","Issued by King John 1","Created in year 1215"],
+       "context": [""]
+      },
+      {"tag": "Hundred_Years_War",
+       "patterns": ["The Hundred Years War was fought between what two countries?", "Countries invloved in Hundred Years War", "Hundred Years War lasted for how many years?"],
+       "responses": ["France and England", "116 years between France and England","1337 to 1453 for total 116 years between France and England"],
+       "context": [""]
+      },
+      {"tag": "95_Theses",
+       "patterns": ["This man wrote a document known as the 95 Theses", "Who wrote 95 Theses", "95 Theses written by?"],
+       "responses": ["Martin Luther", "95 These written by Matin Luther","Martin Luther who started Protestant movement created the 95 Theses"],
+       "context": [""]
+      },
+      {"tag": "Khmer_Rouge",
+       "patterns": ["The Khmer Rouge was a regime ruling this nation in the 20th century","Khamer Rogue was ruled which country?","Khamer Rougue is political patry of which country?"],
+       "responses": ["combodia","It was ruling party in combodia","It was combodian political party"],
+       "context": [""]
+      },
+      {"tag": "The_Scourge_of_God",
+       "patterns": ["What famous 5th century A.D conqueror was known as 'The Scourge of God?'", "Who is famous as The Scourge of God ", "5th century AD conquerer called as The Scourge of God "],
+       "responses": ["Attila the Hun","Attila the Hun is the 5th century AD The Scourge of God","Attila the Hun is The Scourge of God"],
+       "context": [""]
+      },
+      {"tag": "Western_explorer",
+       "patterns": ["Who was the first Western explorer to reach China?","China first explored by Western explorer","first Western explorer in China"],
+       "responses": ["Marco Polo","The first Western explorer in china is Marco Polo","Marco Polo is the first Western explorer to reach China"],
+       "context": [""]
+      },
+      {"tag": "The_Starry_Messenger",
+       "patterns": ["Galileo published The Starry Messenger in what year?", "The Starry Messenger written by?", "Who Authored The Starry Messenger?"],
+       "responses": ["1610","Galileo Wrote the book in 1610","1610 it is penned by Galileo"],
+       "context": [""]
+      },
+      {"tag": "First_president",
+       "patterns": ["Who was the first president of the United States?","United States first president","first president of America"],
+       "responses": ["George Washington","George Washington is the first president of United States","United states first president is George Washington"],
+       "context": [""]
+      },
+      {"tag": "Civil_War",
+       "patterns": ["The Civil War was a war between the","The Civil War happened between","Who fought Civil War in US"],
+       "responses": ["North and South","North and South involbed in Civil War in US","US Civil War is fought between North and South"],
+       "context": [""]
+      },
+      {"tag": "US_National_Bird",
+           "patterns": ["What is US national bird?","US National Bird?","Is there a US National Bird?"],
+           "responses": ["Bald Eagle","US National Bird is Bald Eagle","Yeah It is Bald Eagle"],
+           "context": [""]
+          },
+      {"tag": "Statue_of_Liberty",
+           "patterns": ["What do the seven spikes on The Statue of Liberty's head stand for?","Statue of Liberty is in which Country?","What does Status of Liberty's seven spikes represent?"],
+           "responses": ["Seven Continents","Statue of Liberty is in America","Seven Spikes on The Statue of Liberty represent Seven Continents of World"],
+           "context": [""]
+          },
+      {"tag": "American_Flag",
+           "patterns": ["How many stars are on the American flag?","What represents the stars in American Flag","Stars on American Flag"],
+           "responses": ["50","Stars on the American Flag represents 50 States ","There are 50 Stars on the American Flag"],
+           "context": [""]
+          },
+      {"tag": "first_news_paper",
+           "patterns": ["The first news paper in the world was started by?","country which started first news paper","world's first news paper published in country"],
+           "responses": ["China","The world's first news paper is published by China","China started the World's first news paper"],
+           "context": [""]
+          },
+      {"tag": "Man of Blood and Iron",
+           "patterns": ["Who is known as Man of Blood and Iron ?","Who is famous as Man of Blood and Iron?","Who is called as Man of Blood and Iron"],
+           "responses": ["Bismarck","Bismarck is called as Man of Blood and Iron","Man of Blood and Iron is Bismarck"],
+           "context": [""]
+          },
+      {"tag": "Napoleon_of_Iran",
+           "patterns": ["Who is called the Napoleon of Iran?","Who is famous as Napoleon of Iran","Person known as Napoleon of Iran"],
+           "responses": ["Nader Shah","The Nader Shah is called as Napoleon of Iran","Nader Shah is known as Napoleon of Iran"],
+           "context": [""]
+          },
+      {"tag": "Oldest_civilization",
+           "patterns": ["Which is considered as oldest civilization of the world?","Oldest civilization of the World?","World's Oldest civilization"],
+           "responses": ["Mesopotamian Civilization","World's Oldest civilization is Mesopotamian Civilization","Mesopotamian Civilization is world's oldest civilization"],
+           "context": [""]
+          },
+      {"tag": "Master_of_Greek_comedy",
+           "patterns": ["Who is considered as the Master of Greek comedy ?","Who is known as Master of Greek comedy?","Person Called as Master of Greek comedy"],
+           "responses": ["Aristophanes","Master of Greek comedy is Aristophanes","Aristophanes is known as Master of Greek comedy"],
+           "context": [""]
+          },
+      {"tag": "Gift_of_the_Nile",
+           "patterns": ["Which is called as Gift of the Nile?","Country known as Gift of the Nile?","Which country is called as Gift of the Nile"],
+           "responses": ["Egypt","Egypt is called as Gift of the Nile","Egypt is known as Gift of the Nile"],
+           "context": [""]
+          },
+      {"tag": "Aztec_civilization",
+           "patterns": ["In which country Aztec civilization was originated ?","Origin of Aztec civilization","Aztec civilization Origin Country"],
+           "responses": ["Mexico","Aztec civilization originated in Mexico","Mexico country is the origin place of Aztec civilization"],
+           "context": [""]
+          },
+      {"tag": "oldest_dynasty",
+           "patterns": ["The oldest dynasty still ruling in which country?","currently ruling oldest dynasty in world","oldest dynasty still ruling in world"],
+           "responses": ["Japan","Japan is the country where still oldest dynasty is ruling","Japan is still ruled by the oldest dynasty"],
+           "context": [""]
+          },
+      {"tag": "swastik_symbol",
+           "patterns": ["Which political party used to have swastik symbol ?","swastik symbol is which political party symbol","political party with swastik symbol is there emblem"],
+           "responses": ["National Socialist Party, Germany","German political party, National Socialist Party had the swastik as there symbol","swastik is symbol of National Socialist Party, Germany"],
+           "context": [""]
+          },
+      {"tag": "Hiroshima",
+           "patterns": ["What was the name of the atom bomb dropped by USA on Hiroshima in Japan during the second world war ?","Name of the Atomic bomb dropped on Hiroshima","Atomic Bomb Which devasted the Hiroshima during Second World War"],
+           "responses": ["Little Boy ","Little Boy  is the name of atomic bomb dropped on Hiroshima","Hiroshima is destroyed by bomb called Little Boy  during second world war"],
+           "context": [""]
+          },
+      {"tag": "Five_Relationships",
+           "patterns": ["Who empasized the 'Five Relationships' ?","Five Relationships is empasized by whom?","Who gave Five Relationships"],
+           "responses": ["Confucius","Five Relationships empasized by Confucius","Five Relationships given by Confucius"],
+           "context": [""]
+          },
+      {"tag": "Simon_Commission",
+           "patterns": ["Why was the Simon Commission boycotted by Indians?","Why Indians bycotted Simon Commission?","Why Indians are against Simon Commission"],
+           "responses": ["Because it was made up of Britishers","Commission is full of English Prople","Simon Commission is not in interest of Indians"],
+           "context": [""]
+          },
+      {"tag": "Pakka_Roads",
+           "patterns": ["Who devised the method of making 'Pakka' roads?","Who discovered the Pakka Roads?","Who came up with idea of Pakka Roads"],
+           "responses": ["Mc Adam","Mc Adam devised Method of making Pakka roads","Pakka Roads is idea from Mc Adam"],
+           "context": [""]
+          },
+      {"tag": "Triple_Entente",
+           "patterns": ["Why France joined the Triple Entente ?","Reason for France joing Triple Entente","Triple Entente joined by France, Why?"],
+           "responses": ["France needed protection from Germany","To get Protection from Germany France enetered Triple Entente","France joined Triple Entente to get Protection from Germany"],
+           "context": [""]
+          },
+      {"tag": "Foreign_rule",
+           "patterns": ["Which country has always remained free from foreign rule?","Which country in the world is not under foreign rule","Country never under foreign rule"],
+           "responses": ["Nepal","Nepal is only country in the world never ruled by foreigners","Nepal is never under foreign rule"],
+           "context": [""]
+          },
+      {"tag": "Al_Khazneh",
+           "patterns": ["The historical monument Al Khazneh is located in which city ?","Al Khazneh is in which city?","Which city has Al Khazneh?"],
+           "responses": ["Petra","Petra has historical monument Al Khazneh","Al Khazneh is in city Petra"],
+           "context": [""]
+          },
+      {"tag": "Peloponnesian_war",
+           "patterns": ["The Peloponnesian war was fought between which sides?","Who fought the Peloponnesian war","who invloved in the Peloponnesian war"],
+           "responses": ["Sparta and Athens","Sparta and Athens fought the Peloponnesian war","Peloponnesian war is in between Sparta and Athens"],
+           "context": [""]
+          },
+      {"tag": "Communist_Party",
+           "patterns": ["who founded the Communist Party ?","Who started Communist Party in Russia","Communist Party in Russia is started by whom?"],
+           "responses": ["Lenin","Communist Party in Russia is founded by Lenin ","Russian Revolutionary Lenin Started the Communist Party"],
+           "context": [""]
+          },
+      {"tag": "Man_is_a_political animal",
+           "patterns": ["Who said that Man is a political animal ?","Man is a Political Animal who said this?","Who gave the famous saying Man is a Political animal"],
+           "responses": ["Aristotle","Man is a Plotical animal is said by Aristotle","Aristotle famously quoted Man is a Political animal"],
+           "context": [""]
+          },
+      {"tag": "World_War_II ",
+           "patterns": ["The invasion of which  country in 1939 widely regarded to have started World War II ?","The invasion of which  country started World War II ?","World War II started by invation of which country?"],
+           "responses": ["Poland","Invasion of Poland in 1939 started World War II","World War II started by invasion of Poland in 1939"],
+           "context": [""]
+          },
+      {"tag": "scientific_socialism ",
+           "patterns": ["Who is also known as the founder of scientific socialism ?","who founded scientific socialism ? ","scientific socialism is founded by ?"],
+           "responses": ["Karl Marx","Karl Marx is founder of scientific socialism","scientific socialism is founded by Karl Marx"],
+           "context": [""]
+          },
+      {"tag": "Opium_war",
+           "patterns": ["The Opium war held between which two countries ?","Which countries involved in Opium war","Who fought the Opium war ?"],
+           "responses": ["China and England","China and England involved in Opium war","Opium war was fought between China and England"],
+           "context": [""]
+          },
+      {"tag": "Sumerians",
+           "patterns": ["A system of writing evolved by Sumerians ?","Sumerians Writing system famously called as ?","What is the name of Sumerians writing system ?"],
+           "responses": ["Cuneiform","Cuneiform is the name of Sumerian writing system","writing system of Sumerian is known as Cuneiform"],
+           "context": [""]
+          },
+      {"tag": "Great_Pyramid",
+           "patterns": ["Who built the Great Pyramid at Gizeh ? ","The Great Pyramid at Gizeh is built in year ?","Where is Great Pyramid of Gizeh ?"],
+           "responses": ["Pharaoh Cheops (Khufu) built Great Pyramid","The Great Pyramid at Gizeh is built in year 2650 B C","Great Pyramid of Gizeh is in Egypt"],
+           "context": [""]
+          },
+      {"tag": "Adolf_Hitler",
+           "patterns": ["What is the name of autobiography of Adolf Hitler ?","Adolf Hitler autobiography is called ?","What is famous autobiography of Adolf Hitler"],
+           "responses": ["Mein Kampf","Mein Kampf is the autobiography of Adolf Hitler","Adolf Hitler's autobiography is Mein Kampf"],
+           "context": [""]
+          },
+      {"tag": "Pearl_Harbour",
+           "patterns": ["Where is the 'Pearl Harbour' located ?","Pearl Harbour is in which country?","What is the significance of Pearl Harbour during World War II"],
+           "responses": ["Pearl Harbour located in Pacific ocean","Pearl Harbour is in US","The attack on Pearl Harbour made US to enter to World War II"],
+           "context": [""]
+          },
+      {"tag": "Habeas_Corpus",
+           "patterns": ["Habeas Corpus Act was passed ?","Which year Habeas Corpus Act was passed ?","Habeas Corpus Act came into existance in year ?"],
+           "responses": ["1679","Habeas Corpus Act is passed in year 1679","1679 is the year Habeas Corpus passed"],
+           "context": [""]
+          },
+      {"tag": "Boston_Tea_Party",
+           "patterns": ["Which year is associated with the Boston Tea Party ?","Boston Tea Party happened in year?","Which year Boston Tea Party to took place?"],
+           "responses": ["1773","Boston Tea Party happened in year 1773","1773 Boston Tea Party took place in US"],
+           "context": [""]
+          },
+      {"tag": "Great_wall_of_China",
+           "patterns": ["Who began the construction of a wall in ancient China, to keep out invaders from the north, known as the Great wall of China?","Which Chinese ruler started the construction of Great wall of China?","China's The Great wall of china is constructed by?"],
+           "responses": ["Chin Ruler","Chin Ruler started the construction of The Great wall of China","China's The Great Wall of China is constructed by Chin ruler"],
+           "context": [""]
+          },
+      {"tag": "American_Independence",
+           "patterns": ["In which year American Independence was acknowledged by England?","Which year Englad recognised American Independence","year in which American Independence is recognised by England"],
+           "responses": ["1783","Englad recognised American Independence in year 1783","By 1783 American Independence was acknowledged by Englad"],
+           "context": [""]
+          },
+      {"tag": "Muslim_calender",
+           "patterns": ["Which of the following year is considered as the first year of the Muslim calender ?","Beginning of Muslim Calendar","The First year of Muslim Calender "],
+           "responses": ["AD 622","Beginning of Muslim Calendar is AD 622","the First year in Muslim Calender is AD 622"],
+           "context": [""]
+          },
+      {"tag": "Chinese_revolution",
+           "patterns": ["The  Chinese revolution ended the rule of which dynasty? ","Which dynasty rule ended after the Chinese revolution?","Chinese Revolution ended in which year?"],
+           "responses": ["Manchus dynasty","Manchus dynasty rule ended in 1911 because of Chinese revolution","Chinese revolution ended in year 1911"],
+           "context": [""]
+          },
+      {"tag": "Sphinx",
+           "patterns": ["Sphinx is associated with which of the following civilizations? ","Sphinx is in which country ?","Which country has Sphinx monument?"],
+           "responses": ["Egyptian Civilization","Sphinx is in country Egypt","Egypt has the Sphinx monument"],
+           "context": [""]
+          },
+      {"tag": "Great_Barrier_Reef",
+      "patterns": ["What country is home to the Great Barrier Reef?", "Where can we find the Great Barrier Reef?"],
+      "responses": ["Australia", "The great barrier reef is located in Australia"],
+      "context": [""]
+      },
+      {"tag": "Nelson_Mandela",
+      "patterns": ["In what country was Nelson Mandela born?", "Where was Nelson Mandela born?"],
+      "responses": ["South Africa", "Nelson Mandela was born in South Africa"],
+      "context": [""]
+      },
+      {"tag": "highest_mountain",
+      "patterns": ["Which is the highest mountain in the world?", "highest mountain in the world"],
+      "responses": ["Mount Everest is the highest mountain in the world", "Mount Everest"],
+      "context": [""]
+      },
+      {"tag": "largest_ocean",
+      "patterns": ["What is the largest ocean on earth?", "Name the largest ocean in the world?"],
+      "responses": ["The Pacific Ocean is the largest and deepest of the world ocean basins.", "Pacific Ocean"],
+      "context": [""]
+      },
+      {"tag": "continent",
+      "patterns": ["Which is the only continent joined to two others?", "Name the continent joined by two continents?"],
+      "responses": ["Asia"],
+      "context": [""]
+      },
+      {"tag": "longest_river",
+      "patterns": ["Which is the world's longest river?", "Name world's longest river"],
+      "responses": ["The Nile, It is located in Africa", "The Nile"],
+      "context": [""]
+      },
+      {"tag": "Southern_most_city",
+      "patterns": ["What is world's Southernmost city?", "Where id world's Southernmost city located?"],
+      "responses": ["Puentas Arenas", "Puentas Arenas and it is located in South America"],
+      "context": [""]
+      },
+      {"tag": "Santa_Claus",
+      "patterns": ["Where is the official home of Santa Claus?", "Where does Santa Claus live?"],
+      "responses": ["Finland is the official home of Santa Claus", "Finland"],
+      "context": [""]
+      },
+      {"tag": "smallest_country",
+      "patterns": ["Which is the smallest country in the world?", "smallest country in the world?"],
+      "responses": ["The smallest country in the world is Vatican City", "Vatican City"],
+      "context": [""]
+      },
+      {"tag": "Scandinavian_countries",
+      "patterns": ["What are the Scandinavian countries?", "Name the Scandinavian countries"],
+      "responses": ["Denmark, Norway and Sweden are the Scandinavian countries", "Norway, Sweden and Denmark"],
+      "context": [""]
+      },
+      {"tag": "closest_to_Antarctica",
+      "patterns": ["Which country's tip is closest to Antarctica?", "Name the country closest to Antarctica"],
+      "responses": ["Chili country's tip is the closest", "Chili"],
+      "context": [""]
+      },
+      {"tag": "Live_Action_Short",
+      "patterns": ["Which country gave first time voting rights to women?", "Name the country who granted voting rights to women"],
+      "responses": ["New Zealand gave the rights for the first time to women to vote", "New Zealand"],
+      "context": [""]
+      },
+      {"tag": "Dead_sea",
+      "patterns": ["Where is dead sea located?", "Dead sea is located between which two countries?"],
+      "responses": ["Dead sea is located between Jordan and Israel", "It is between Jordan and Israel"],
+      "context": [""]
+      },
+      {"tag": "Statue_of_liberty",
+      "patterns": ["Which country gifted statue of liberty to USA?", "Who gifted statue of liberty"],
+      "responses": ["French gifted statue of liberty to USA in 1886", "French in 1886"],
+      "context": [""]
+      },
+		{"tag": "Bermuda_triangle",
+		"patterns": ["In which ocean Bermuda triangle is located?", "Where is Bermuda triangle located?"],
+		"responses": ["Bermuda triangle is located in the Atlantic Ocean", "It is located in the Atlantic ocean"],
+		"context": [""]
+		},
+		{"tag": "midnight_sun",
+		"patterns": ["Which country is also known as land of midnight sun?", "land of midnight sun"],
+		"responses": ["Norway is called as the land of midnight sun", "Norway"],
+		"context": [""]
+		},
+		{"tag": "playground_of_Europe",
+		"patterns": ["Which country is called as land of playground of Europe?", "playground of Europe is addressed for which country?"],
+		"responses": ["Switzerland is called as the playground of Europe", "It is Switzerland"],
+		"context": [""]
+		},
+		{"tag": "land_of_rising_sun",
+		"patterns": ["What is called as the land of rising sun?", "Name the country known as the land of rising sun"],
+		"responses": ["Japan is called as the land of rising sun", "Japan, because the sun rises first there"],
+		"context": [""]
+		},
+		{"tag": "capita",
+		"patterns": ["Which country has highest per capita income in the world?", "Who has the highest per capita income?"],
+		"responses": ["Qatar has the highest per capita gain in the world", "Qatar"],
+		"context": [""]
+		},
+		{"tag": "safest_country",
+		"patterns": ["Which is the safest country in Asia?", "Name the safest country in Asia"],
+		"responses": ["Japan is the safest country in Asia", "Japan"],
+		"context": [""]
+		},
+		{"tag": "latest_volcano",
+		"patterns": ["Which is the latest volcano that erupted?", "Name the latest volcano"],
+		"responses": ["Taal is the latest volcano that erupted in Philippines which killed 38 people", "Taal in Philippines"],
+		"context": [""]
+		},
+		{"tag": "largest_desert",
+		"patterns": ["Which is the largest desert in the world?", "Name the largest desert in the world"],
+		"responses": ["Antarctica is the largest desert in the world", "Antarctica"],
+		"context": [""]
+		},
+		{"tag": "ATM",
+		"patterns": ["Which is the place where there is only one ATM?", "Name the country that has only one ATM"],
+		"responses": ["Antarctica has only one ATM", "Antarctica"],
+		"context": [""]
+		},
+		{"tag": "largest_island",
+		"patterns": ["Which is the largest island in the world?", "Name the largest island in the world"],
+		"responses": ["Green land is the largest island in the world", "Green land"],
+		"context": [""]
+		},
+		{"tag": "oldest_state",
+		"patterns": ["Which is the oldest state in the world?"],
+		"responses": ["The oldest state in the world is San Marino!"],
+		"context": [""]
+		},
+		{"tag": "most_visited_country",
+		"patterns": ["Which country is the most visited country in the world?", "Name the most visited country in the world"],
+		"responses": ["France is teh most visited country in the world", "France"],
+		"context": [""]
+		},
+		{"tag": "liquid_rainbow",
+		"patterns": ["Which river is known as liquid rainbow?", "What is liquid rainbow"],
+		"responses": ["Cano Cristales, a river in this South American country, is referred to as the liquid rainbow because of its many vivid colors, which are produced from the reproductive process of aquatic plants.", "Cano Cristales, a river in this South American country, is referred to as the liquid rainbow"],
+		"context": [""]
+		},
+		{"tag": "first_writing_system",
+		"patterns": ["Who invented the world’s first writing system, and what is it called as?", "Name the country who invented the world's first writing system"],
+		"responses": ["Iraq invented the world's first writing system and is called as cuneiform", "Iraq"],
+		"context": [""]
+		},
+		{"tag": "longest_unprotected_border",
+		"patterns": ["Which is the world’s longest unprotected border?", "Where is the world’s longest unprotected border?"],
+		"responses": ["The 49th parallel marks the border between Canada and the United States. At 5,525 miles, it’s the world’s longest unprotected border.", "world’s longest unprotected border is between Canada and USA"],
+		"context": [""]
+		},
+		{"tag": "oldest_university",
+		"patterns": ["Which is the oldest known university in the world?", "Name the oldest known university in the world"],
+		"responses": ["University of Al-Karaouine in the ancient city of Fes el-Bali is the oldest known university in the world.", "Al-Karaouine in the ancient city of Fes el-Bali"],
+		"context": [""]
+		},
+		{"tag": "largest_cave",
+		"patterns": ["Which is the largest cave chamber on Earth?", "Largest cave chamber on earth"],
+		"responses": ["Sarawak Chamber on the island of Borneo is the which is 2,000 feet long, 1,400 feet wide and almost 500 feet tall", "Sarawak Chamber on the island of Borneo"],
+		"context": [""]
+		},
+		{"tag": "largest_church",
+		"patterns": ["Where is the largest church in the world?", "largest church in the world"],
+		"responses": ["Basilica of Our Lady of Peace in West African nation measuring about measures 518 feet tall and covers an area of 323,000 square feet.", "Basilica of Our Lady of Peace"],
+		"context": [""]
+		},
+		{"tag": "more_fsh_species",
+		"patterns": ["Which lake has the more species in the world?", "Where can we find the most fish species in the world"],
+		"responses": ["Lake Malawi which is the third-largest lake in Africa contains more fish species in the world"],
+		"context": [""]
+		},
+		{"tag": "highest_spot",
+		"patterns": ["Which is the highest spot on Earth?", "Where can we find the highest spot on Earth"],
+		"responses": ["Mount Chimborazo in South American nation is not the tallest mountain in the world, but it is the highest spot on Earth and thus closest to outer space."],
+		"context": [""]
+		},
+		{"tag": "quitest_room",
+		"patterns": ["Where is the world's quietest room is located?"],
+		"responses": ["The quietest room is located at the Microsoft's headquarters in Washington state."],
+		"context": [""]
+		},
+		{"tag": "metric_system",
+		"patterns": ["Which are the countries that do not use the metric system?", "Name the countries that don't use the metric system"],
+		"responses": ["Liberia, Myanmar, and the United States do not use the metric system", "Liberia, Myanmar, and the United States"],
+		"context": [""]
+		},
+		{"tag": "longest_place",
+		"patterns": ["What is the longest place name on the planet is 85 letters long?", "Longest place name on the earth"],
+		"responses": ["It is Taumatawhakatangihanga-koauauotamateaturipukakapikimaung-ahoronukupokaiwhenuakitanatahu, New Zealand"],
+		"context": [""]
+		},
+		{"tag": "coldest_temperature",
+		"patterns": ["What is the coldest temperature recorded ever", "coldest temperature till date"],
+		"responses": ["-144 degrees Fahrenheit which was recorded in Antarctica during a span of research between 2004 and 2016."],
+		"context": [""]
+		},
+		{"tag": "popular_name",
+		"patterns": ["What is the name that is believed to be most popular in the world?", "A name that is thought to the most popular"],
+		"responses": ["Muhammad is the name that is believed to be most popular", "Muhammad is thought to be the most popular name"],
+		"context": [""]
+		},
+		{"tag": "Youngest_country",
+		"patterns": ["Which is the youngest country the world?", "Name the youngest country in the world."],
+		"responses": ["South Sudan in North Africa just gained its independence from Sudan in 2011, which currently makes it the youngest country in the world.", "South Sudan in North Africa is the youngest country in the world."],
+		"context": [""]
+		},
+		{"tag": "bike_friendly",
+		"patterns": ["Which is the bike-friendly city in the world?", "Name the bike-friendly city in the world."],
+		"responses": ["Copenhagen, Denmark is the most bike friendly city in the world"],
+		"context": [""]
+		},
+		{"tag": "largest_city",
+		"patterns": ["Which is the world's largest city in terms of population?", "Name the world's largest city in terms of population"],
+		"responses": ["Tokyo is the world's largest city in the world with 37 million inhabitants."],
+		"context": [""]
+		},
+		{"tag": "equator",
+		"patterns": ["What is the only country through which both the equator and the Tropic of Capricorn pass?"],
+		"responses": ["Brazil, the equator passes through far northern Brazil, while the Tropic of Capricorn passes through Rio de Janeiro in the southern part of the country."],
+		"context": [""]
+		},
+		{"tag": "Bridge_of_No_Return?",
+		"patterns": ["Which two countries are joined by the Bridge of No Return?", "Bridge of No Return?"],
+		"responses": ["The Bridge of No Return is located in Panmunjom, in the demilitarized zone between North Korea and South Korea."],
+		"context": [""]
+		},
+		{"tag": "wild_bears",
+		"patterns": ["What country has the wildest bears?"],
+		"responses": ["Russia. It has 100,000 wild bears according to latest census"],
+		"context": [""]
+		},
+		{"tag": "nick_name",
+		"patterns": ["What is a nickname for New York City?", "Is there any nickname it New York City"],
+		"responses": ["New York has long been called the Big Apple. This was the name of a dance that was popular there in the 1930s.", "Yes, New York city is called as the Big Apple"],
+		"context": [""]
+		},
+		{"tag": "purchase",
+		"patterns": ["Which state did the United States purchase from Russia?", "Name the state purchased by the united states"],
+		"responses": ["Alaska since October 18, 1867, the vast land was purchased from Russia for $7.2 million.", "Alaska"],
+		"context": [""]
+		},
+		{"tag": "number_of_states",
+		"patterns": ["How many states are there in the United States of America?"],
+		"responses": ["There are 50 states in the United States. The last, Hawaii, was admitted in 1959."],
+		"context": [""]
+		},
+		{"tag": "tallest_waterfall",
+		"patterns": ["Which is the world's tallest waterfall?", "Name the tallest waterfall in teh world"],
+		"responses": ["Angel Falls is the world’s tallest waterfall spotted by an aviator Jimmy Angel, in 1935"],
+		"context": [""]
+		},
+		{"tag": "magnetic_North_Pole",
+		"patterns": ["what nation can the magnetic North Pole be found?", "Where can we find the magnetic north pole"],
+		"responses": ["The magnetic North Pole is in Canada. This is the spot to which compasses point north.", "We can find it in Canada"],
+		"context": [""]
+		},
+		{"tag": "Cryptocurrency",
+		"patterns": ["Cryptocurrency", "What is Cryptocurrency?"],
+		"responses": ["Crypto currency is a digital currency which is carried out through the help of a computer or a smart phone", "Cryptocurrency is a type of currency that uses digital files as money"],
+		"context": [""]
+		},
+		{"tag": "value",
+		"patterns": ["Why does currency of any country goes up or down in value?", "Why does currency of any country fluctuates?"],
+		"responses": ["The value of the currency of any country is determined, by the interaction between the demand and supply of domestic currency.", "The value of the currency is strictly related to the productivity of the economy and the capacity to find the market equilibrium between demand and supply of domestic currency."],
+		"context": [""]
+		},
+		{"tag": "world_currency_reserve?",
+		"patterns": ["What is world currency reserve?", "world currency reserve?"],
+		"responses": ["It is a currency which is maintained by the Central Bank as foreign exchange reserves. This can be used in international transactions, in foreign investments and in other facets of the world economy."],
+		"context": [""]
+		},
+		{"tag": "qatar_currency",
+		"patterns": ["What is the official currency of qatar?", "qatar currency"],
+		"responses": ["qatari riyal"],
+		"context": [""]
+		},
+		{"tag": "leu",
+		"patterns": ["Which country uses the currency leu?", "Who uses leu?"],
+		"responses": ["Romania", "Romanians use leu"],
+		"context": [""]
+		},
+		{"tag": "Russia_currency",
+		"patterns": ["What is the official currency of Russia?", "Russians use what type of money"],
+		"responses": ["Russian ruble"],
+		"context": [""]
+		},
+		{"tag": "Exchange_Rate",
+		"patterns": ["What is an Exchange Rate?", "What is an Exchange Rate in currency conversion?"],
+		"responses": ["An exchange rate is the value of one nation's currency versus the currency of another nation or economic zone.", "An exchange rate is the price of a country's currency in terms of another currency. In other words, it represents how many units of a foreign currency a consumer can buy with one unit of their home currency."],
+		"context": [""]
+		},
+		{"tag": "East_Caribbean",
+		"patterns": ["Which country uses the currency East Caribbean dollar?", "Who uses the currency East Caribbean dollar?"],
+		"responses": ["Saint Kitts and Nevis"],
+		"context": [""]
+		},
+		{"tag": "most_expensive",
+		"patterns": ["which currency is the most expensive in the world?", "Most expensive currency"],
+		"responses": ["Kuwaiti dinar", "Kuwaiti dinar, its values is:1 dinar equals Dollar 3.29"],
+		"context": [""]
+		},
+		{"tag": "most_valuable",
+		"patterns": ["which currency is the most valuable in the world?", "most valuable currency"],
+		"responses": ["Bahraini dinar"],
+		"context": [""]
+		},
+		{"tag": "Top_10_currencies",
+		"patterns": ["What are the top 10 Most Expensive World Currencies in 2020?", "10 Most Expensive World Currencies"],
+		"responses": ["Kuwaiti Dinar, Bahrain Dinar, Oman Rial, Jordan Dinar, British Pound Sterling, Cayman Islands Dollar, European Euro, Swiss Franc, US Dollar, Canadian dollar"],
+		"context": [""]
+		},
+		{"tag": "beautiful_currency",
+		"patterns": ["which is latest most beautiful currency in the world?", "beautiful currency"],
+		"responses": ["Kazakhstan's currency is known as the tenge."],
+		"context": [""]
+		},
+		{"tag": "Indian_currency",
+		"patterns": ["What is written on Indian currency?", "Specialty of Indian currency"],
+		"responses": ["The denomination is written in English and Hindi. On the reverse is a language panel which displays the denomination of the note in 15 of the 22 official languages of India"],
+		"context": [""]
+		},
+		{"tag": "multiple_currency",
+		"patterns": ["Who uses multiple currencies?", "Which country have multiple currencies?"],
+		"responses": ["The Kingdom of the Netherlands has multiple currencies"],
+		"context": [""]
+		},
+		{"tag": "Swazi_lilangeni",
+		"patterns": ["Which country uses the currency Swazi lilangeni?"],
+		"responses": ["Swaziland"],
+		"context": [""]
+		},
+		{"tag": "oldest_currency",
+		"patterns": ["What is the world's oldest currency still in use?", "world's oldest currency"],
+		"responses": ["Pound sterling is the world's oldest currency still in use", "Pound sterling"],
+		"context": [""]
+		},
+		{"tag": "first_US_coin",
+		"patterns": ["What was the motto on the first US coin?", "The first US coin"],
+		"responses": ["The motto on the first US coin was Mind Your Business"],
+		"context": [""]
+		},
+		{"tag": "World_currency",
+		"patterns": ["What is the percentage of the world's currency is in cash?", "World's currency cash percentage"],
+		"responses": ["Only 8 percent of the world's currency is in cash", "It is only 8 percent"],
+		"context": [""]
+		},
+		{"tag": "Timor",
+		"patterns": ["What is the national currency of East Timor?", "What is the national currency of Timor-Leste?"],
+		"responses": ["United States Dollar"],
+		"context": [""]
+		},
+		{"tag": "Pip",
+		"patterns": ["What Is a Pip?", "Pip in FX"],
+		"responses": ["Pip stands for percentage in point and is the smallest increment of trade in FX."],
+		"context": [""]
+		},
+		{"tag": "Forex_Market",
+		"patterns": ["What are the 4 Major Currencies on the Forex Market?", "Major Currencies in the Forex Market"],
+		"responses": ["US Dollar, Japanese Yen, Euro, British Pound"],
+		"context": [""]
+		},
+		{"tag": "profit",
+		"patterns": ["what is profit?", "profit"],
+		"responses": ["Profit is the financial gain from business activity minus expenses.", "A financial gain, especially the difference between the amount earned and the amount spent in buying, operating, or producing something."],
+		"context": [""]
+		},
+		{"tag": "currency",
+		"patterns": ["what is currency?", "Define Currency"],
+		"responses": ["Currency is a medium of exchange for goods and services.", "It's money, in the form of paper or coins, usually issued by a government and generally accepted at its face value as a method of payment."],
+		"context": [""]
+		},
+		{"tag": "Euro",
+		"patterns": ["which country in Europe does not use euro?", "Who does not use Euro"],
+		"responses": ["Few EU countries that do not use the euro are Bulgaria, Croatia, Czech Republic, Denmark, Hungary, Poland, Romania, Sweden, and the United Kingdom"],
+		"context": [""]
+		},
+		{"tag": "United_States ",
+		"patterns": ["What is the official currency United States of America?", "What is the currency United States", "What is the currency US"],
+		"responses": ["United States Dollar", "It is United States Dollar. Also referred to as the dollar, U.S. dollar, or American dollar"],
+		"context": [""]
+		},
+				{"tag": "types_of_cheese",
+		"patterns": ["How many different types of cheese are there in the world??", "Types of cheese in the world?"],
+		"responses": ["Seven", "7, They are Fresh Cheeses ,Natural Rind, Soft White Cheese, Semi-Soft, Hard Cheeses, Blue Cheeses, Flavored Cheeses"],
+		"context": [""]
+		},
+		{"tag": "Cuisine",
+		"patterns": ["What is a cuisine?", "cuisine"],
+		"responses": ["A cuisine is a style of cooking characterized by distinctive ingredients, techniques and dishes, and usually associated with a specific culture or geographic region."],
+		"context": [""]
+		},
+		{"tag": "loved_cuisine",
+		"patterns": ["what is the most loved cuisine?", "most loved cuisine"],
+		"responses": ["Italian food is officially the most popular cuisine in the world."],
+		"context": [""]
+		},
+		{"tag": "Fear_of_food",
+		"patterns": ["What is the Fear of food called as?", "Fear of food"],
+		"responses": ["Cibophobia"],
+		"context": [""]
+		},
+		{"tag": "expensive_spice",
+		"patterns": ["What is the world's most expensive spice??", "expensive spice"],
+		"responses": ["Saffron is the most expensive spice in the world is because of the growing process", "It is Saffron. Quality saffron can cost around 3,000 dollars for just two pounds."],
+		"context": [""]
+		},
+		{"tag": "turmeric",
+		"patterns": ["Which part of a turmeric plant is dried and used?", "Qatar currency"],
+		"responses": ["The root part"],
+		"context": [""]
+		},
+		{"tag": "chili_pepper",
+		"patterns": ["Who produces, consumes and exports most chili peppers in the world?", "Who is the largest producer of Chili peppers in the world"],
+		"responses": ["India", "India, they were introduced to India by the Portuguese in the 15th century"],
+		"context": [""]
+		},
+		{"tag": "hottest_chili",
+		"patterns": ["Which is the hottest chili in the world?", "What is ghost chili"],
+		"responses": ["The bhut jolokia, it is the spiciest peppers.", "Bhut jolokia is also known as ghost chili."],
+		"context": [""]
+		},
+		{"tag": "green_vegetables",
+		"patterns": ["What vitamin are leafy green vegetables rich in?", "What vitamin can be obtained from leafy green vegetables?"],
+		"responses": ["Vitamin K", "Leafy green vegetables are rich in vitamin K, which is essential for helping blood to clot."],
+		"context": [""]
+		},
+		{"tag": "chocolate",
+		"patterns": ["What country is renowned for chocolate?", "Which chocolate is famous"],
+		"responses": ["Belgium, in northwestern Europe, is renowned for fine chocolates.", "Belgium chocolates are very famous"],
+		"context": [""]
+		},
+		{"tag": "United_States_national_fruit",
+		"patterns": ["What is The National Fruit of United States?", "United States national fruit"],
+		"responses": ["The United States of America Don’t Have Any National Fruit."],
+		"context": [""]
+		},
+		{"tag": "ancient_India",
+		"patterns": ["Which was called food of the gods in ancient India?"],
+		"responses": ["Yogurt."],
+		"context": [""]
+		},
+		{"tag": "Schnitzel",
+		"patterns": ["What is Schnitzel?", "What type of food is Schnitzel"],
+		"responses": ["Schnitzel is a fried meat cutlet.", "It is fried meat cutlet that is very popular in Germany and other German-speaking countries"],
+		"context": [""]
+		},
+		{"tag": "Colcannon ",
+		"patterns": ["What is Colcannon?", "What is Colcannon made of"],
+		"responses": ["Colcannon is a dish made of cabbage and potatoes.", "It is a vegetarian dish that is made of cabbage and potatoes. It is popular in homeland of Ireland"],
+		"context": [""]
+		},
+		{"tag": "table_sugar",
+		"patterns": ["What is table sugar?", "table sugar"],
+		"responses": ["Sucrose is another word for table sugar."],
+		"context": [""]
+		},
+		{"tag": "breakfast",
+		"patterns": ["Where did the word breakfast come from?", "breakfast"],
+		"responses": ["The term breakfast for the first meal of the day.", "The term breakfast for the first meal of the day first came into use in the English language in the 15th century."],
+		"context": [""]
+		},
+		{"tag": "Lolla_Rossa",
+		"patterns": ["What is Lolla Rossa?"],
+		"responses": ["Lolla Rossa is a type of heirloom lettuce with frilly leaves that have a reddish tint. It originated in California.", "A type of lettuce."],
+		"context": [""]
+		},
+		{"tag": "tomato",
+		"patterns": ["tomato is classified as a", "Is tomato a fruit or vegetable?"],
+		"responses": ["The tomato is commonly mistaken for a vegetable. Technically, a tomato is a fruit.", "Tomato is a fruit"],
+		"context": [""]
+		},
+		{"tag": "grapefruit",
+		"patterns": ["What is the world’s largest producer of grapefruit?", "Who is the leading producer of grapefruit?"],
+		"responses": ["The United States is the world’s largest producer.", "United States."],
+		"context": [""]
+		},
+		{"tag": "coffee",
+		"patterns": ["Who grows most coffee in the world?", "Which country produces the largest quantity if coffee?"],
+		"responses": ["Brazil. It produces about third of the world's supply, according to the International Coffee Organization", "Brazil grows the most coffee in the world."],
+		"context": [""]
+		},
+		{"tag": "Espresso",
+		"patterns": ["What does Espresso mean?", "Espresso word meaning"],
+		"responses": ["Espresso means 'pressed out' in Italian."],
+		"context": [""]
+		},
+		{"tag": "word_coffee",
+		"patterns": ["Where does the word coffee come from?"],
+		"responses": ["The word coffee comes from the Arabic word for wine.", "Qahwah later became kahveh in Turkish, and then koffie in Dutch, which is where we get the English word coffee."],
+		"context": [""]
+		},
+		{"tag": "Beer",
+		"patterns": ["Which is the most widely consumed alcoholic drink"],
+		"responses": ["Beer is the world's most widely consumed alcoholic drink"],
+		"context": [""]
+		},
+		{"tag": "types_of_coffee",
+		"patterns": ["What are the main types of coffee grown in the commercial market?", "types of coffee seeds"],
+		"responses": ["Arabica and Robusta. Robusta is generally seen as the lower quality coffee species compared to Arabica.", "Arabica and Robusta"],
+		"context": [""]
+		},
+		{"tag": "Coffee-consuming",
+		"patterns": ["Which country consumes most coffee in the world?", " Who world's top coffee-consuming country."],
+		"responses": ["Finland is the world's top coffee-consuming country.", "Tomato is a fruit"],
+		"context": [""]
+		},
+		{"tag": "most_expensive_coffee",
+		"patterns": ["What is Kopi luwak?", "Kopi luwak"],
+		"responses": ["Kopi luwak is the world's most expensive coffee.", "Kopi luwak, also known as cat poop coffee. It’s the most expensive coffee in the world"],
+		"context": [""]
+		},
+		{"tag": "Aztecs",
+		"patterns": ["Aztecs fact", "Is there a special fact about Aztecs?"],
+		"responses": ["The Aztecs used chocolate as currency.", "The Aztecs may be known for their love of chocolate, but according to the International Cocoa Organization, they also used cocoa beans as currency. People under Aztec rule could use cocoa to pay their taxes."],
+		"context": [""]
+		},
+		{"tag": "pastry",
+		"patterns": ["Which type of pastry is boiled before it is baked?"],
+		"responses": ["Bagels. They are of Jewish origin and are especially popular in places such as New York City where they have prominent communities."],
+		"context": [""]
+		},
+		{"tag": "potato_chips",
+		"patterns": ["The snack commonly referred to as potato chips were originally called what?", "potato chips original name"],
+		"responses": ["Potato chips were originally referred to as Saratoga chips due to originating from Saratoga, New York in the late 19th Century.", "Saratoga Chips"],
+		"context": [""]
+		},
+		{"tag": "Oktoberfest",
+		"patterns": ["Munich's Oktoberfest is a celebration of which beverage?", "What is Oktoberfest?"],
+		"responses": ["Beer", "Oktoberfest is Germany's most-popular Volksfest or beer and wine festival."],
+		"context": [""]
+		},
+		{"tag": "chocolate_bar",
+		"patterns": ["Who made the first chocolate bar?", "Where was the first chocolate bar made?"],
+		"responses": ["Way back in 1842, the Cadbury company made the very first chocolate bar.", "The first ever chocolate bar was made in England"],
+		"context": [""]
+		},
+		{"tag": "Types_of_cocoa",
+		"patterns": ["What are the types of cocoa?", "cocoa types"],
+		"responses": ["The three main varieties of cocoa plant are Forastero, Criollo, and Trinitario", "Forastero, Criollo, and Trinitario"],
+		"context": [""]
+		},
+		{"tag": "spanakopita",
+		"patterns": ["What is spanakopita?", "Where can you find spanakopita on the menu?"],
+		"responses": ["Spanakopita is a savory pastry made of spinach and phyllo dough. It is a dish native to Greece.", "Greece"],
+		"context": [""]
+		},
+		{"tag": "Chicago",
+		"patterns": ["What is the iconic food item in Chicago city?", "What is Chicago famous for?"],
+		"responses": ["Deep-dish pizza"],
+		"context": [""]
+		},
+		{"tag": "Sandwich",
+		"patterns": ["When does Americans celebrate Nation sandwich day?", "Which date is celebrated as nation sandwich day in the US?"],
+		"responses": ["November 3rd"],
+		"context": [""]
+		},
+		{"tag": "Thanksgiving",
+		"patterns": ["What is cooked for Thanksgiving?", "What are the famous items prepared on the occasion of Thanksgiving?"],
+		"responses": ["Roasted Turkey and Pumpkin pie"],
+		"context": [""]
+		},
+		{"tag": "Canola",
+		"patterns": ["What is the abbreviation of Canola?", "What does Canola stand for?"],
+		"responses": ["Canadian Oil", "Canola stands for Canadian oil."],
+		"context": [""]
+		},
+		{"tag": "Appollo",
+		"patterns": ["Name the first food consumed on the moon in the Appollo 11 moon mission", "What is the first food consumed on the moon in the Appollo 11 moon mission?"],
+		"responses": ["Turkey"],
+		"context": [""]
+		},
+		{"tag": "oldest_drink",
+		"patterns": ["Name the oldest drink of America", "What is the oldest drink of America?"],
+		"responses": ["Doctor", "the oldest drink of America is Doctor."],
+		"context": [""]
+		},
+		{"tag": "popcorn",
+		"patterns": ["Which is the popcorn town of America?", "Which town is called as teh popcorn town?"],
+		"responses": ["Indiana", "Indiana is called the popcorn town in America"],
+		"context": [""]
+		},
+		{"tag": "Icecream",
+		"patterns": ["Which is the icecream capital of the world?", "icecream capital of the world?"],
+		"responses": ["Iowa", "Iowa is the icecream capital of teh world"],
+		"context": [""]
+		},
+		{"tag": "fortune_cookie",
+		"patterns": ["Who made the fortune cookie for the first time?", "Which bakery is first time making a fortune cookie?"],
+		"responses": ["Fortune Cookies Originated in California! It is actually an American invention.", "San Francisco bakery Benkyodo"],
+		"context": [""]
+		},
+		{"tag": "oldest_soft_drink",
+		"patterns": ["Which soft drink consider to be the oldest soft drink in the USA?", "oldest soft drink in the USA"],
+		"responses": ["Doctor pepper"],
+		"context": [""]
+		},
+		{"tag": "edible_food",
+		"patterns": ["Which is the only edible food that never goes bad?"],
+		"responses": ["Honey"],
+		"context": [""]
+		},
+		{"tag": "Sauce",
+		"patterns": ["Which Sauce Is Named After A River And State In Mexico?", "Name a Sauce that is named after a river and state in Mexico"],
+		"responses": ["Tabasco", "Tabasco sauce"],
+		"context": [""]
+		},
+		{"tag": "Sweetest_Tooth",
+		"patterns": ["Which Nation Has The Sweetest Tooth?"],
+		"responses": ["IHolland"],
+		"context": [""]
+		},
+		{"tag": "Vodka",
+		"patterns": ["What Does Vodka Actually Mean?", "What is the meaning of vodka?"],
+		"responses": ["Little Water"],
+		"context": [""]
+		},
+		{"tag": "king_of_beer",
+		"patterns": ["Which beer is called king of beer??"],
+		"responses": ["Budweiser is called a s the king of Beer"],
+		"context": [""]
+		},
+		{"tag": "Rice",
+		"patterns": ["What is the most widely eaten food in the world?", "Which food is the most eaten in the world"],
+		"responses": ["Rice", "Rice is teh most widely eaten food in the world"],
+		"context": [""]
+		},
+		{"tag": "oldest_vegetable",
+		"patterns": ["What is the oldest vegetable?", "Name of the oldest vegetable?"],
+		"responses": ["Pea", "Pea is the odest vegetable"],
+		"context": [""]
+		},
+				{"tag": "leading_role",
+		"patterns": ["Who was awarded the Performance by an actor in a leading role?", "Performance by an actor in a leading role"],
+		"responses": ["Joaquin Phoenix in JOKER"],
+		"context": [""]
+		},
+		{"tag": "actor_in_supporting_role",
+		"patterns": ["Who was awarded the Performance by an actor in a supporting role", "Performance by an actor in a supporting role"],
+		"responses": ["Brad Pitt in ONCE UPON A TIME...IN HOLLYWOOD"],
+		"context": [""]
+		},
+		{"tag": "actress_role",
+		"patterns": ["Who bagged the Performance by an actress in a leading role award?", "Performance by an actress in a leading role"],
+		"responses": ["Renée Zellweger in JUDYs"],
+		"context": [""]
+		},
+		{"tag": "actress_in_supporting_role",
+		"patterns": ["Who bagged the trophy for Performance by an actress in a supporting role?", "Performance by an actress in a supporting role"],
+		"responses": ["Laura Dern in MARRIAGE STORY "],
+		"context": [""]
+		},
+		{"tag": "animated",
+		"patterns": ["Best animated feature film of the year", "Name the animated film that stood out in the Best animated feature film of the year category"],
+		"responses": ["TOY STORY 4 "],
+		"context": [""]
+		},
+		{"tag": "cinematography",
+		"patterns": ["Achievement in cinematography", "Whose achievement was recognized in the cinematography category?"],
+		"responses": ["Jarin Blaschke"],
+		"context": [""]
+		},
+		{"tag": "costume_design",
+		"patterns": ["Achievement in costume design", "Who won the award for best costume design?"],
+		"responses": ["Jacqueline Durran"],
+		"context": [""]
+		},
+		{"tag": "Best_Picture",
+		"patterns": ["Best picture", "Which movie was recognized as the best picture in 2020?"],
+		"responses": ["Parasite"],
+		"context": [""]
+		},
+		{"tag": "Director",
+		"patterns": ["Who got the award for best director?", "Name the person who bagged the best director award"],
+		"responses": ["Bong Joon Ho"],
+		"context": [""]
+		},
+		{"tag": "Original_Screenplay",
+		"patterns": ["Winner of original screenplay", "original screenplay award"],
+		"responses": ["Parasite"],
+		"context": [""]
+		},
+		{"tag": "Adapted_Screenplay",
+		"patterns": ["Who was recognized for the Adapted Screenplay?", "Who claimed the award for the Adapted Screenplay?"],
+		"responses": ["JoJo Rabbit"],
+		"context": [""]
+		},
+		{"tag": "International_Feature",
+		"patterns": ["Which movie made its way to the top in International feature category?", "Which movie won as the international feature?"],
+		"responses": ["Parasite(south Korea)"],
+		"context": [""]
+		},
+		{"tag": "Film_Editing",
+		"patterns": ["Which movie won for the best film editing?", "Name the movie that made it in the film editing category"],
+		"responses": ["Ford v Ferrari"],
+		"context": [""]
+		},
+		{"tag": "Documentary_Short",
+		"patterns": ["What was the best documentary short film in the year 2020?"],
+		"responses": ["Learning to Skateboard in a Warzone (If You’re a Girl)"],
+		"context": [""]
+		},
+		{"tag": "Original_Song",
+		"patterns": ["Which song bagged an award for the original song?", "Which song was recognized for the original song?"],
+		"responses": ["(I’m Gonna) Love Me Again from Rocketman"],
+		"context": [""]
+		},
+		{"tag": "Production_Design",
+		"patterns": ["Which movie won the Oscars for the best production design?", "Who won for the production design?"],
+		"responses": ["Once Upon a Time … in Hollywood"],
+		"context": [""]
+		},
+		{"tag": "Original_Score",
+		"patterns": ["Which movie was recognized for best original score?", "winner of best original score"],
+		"responses": ["Joker"],
+		"context": [""]
+		},
+		{"tag": "Makeup",
+		"patterns": ["Makeup and Hairstyling"],
+		"responses": ["Bombshell"],
+		"context": [""]
+		},
+		{"tag": "Live_Action_Short",
+		"patterns": ["What is the live action short movie?", "Which movie won in the category of live action short?"],
+		"responses": ["The Neighbors’ Window"],
+		"context": [""]
+		},
+		{"tag": "Sound_Editing",
+		"patterns": ["Who won for best sound editing?", "Name the movie that was recognized for the best sound editing"],
+		"responses": ["Ford v Ferrari"],
+		"context": [""]
+		},
+			{"tag": "Cricket",
+		"patterns": ["Cricket as its national sport of", "which country has the cricket as the national sport"],
+		"responses": ["Jamica"],
+		"context": [""]
+		},
+		{"tag": "Archery",
+		"patterns": ["Archery is the national sport of which country"],
+		"responses": ["Bhutan"],
+		"context": [""]
+		},
+		{"tag": "national_sport",
+		"patterns": ["Which is the national sport of Canada?", "national sport of Canada?", "Canada's national sport"],
+		"responses": ["Lacrosse", "Ice hockey", "It is Lacrosse. It’s also called as Ice hockey"],
+		"context": [""]
+		},
+		{"tag": "Commonwealth_games",
+		"patterns": ["When was the Commonwealth game started?", "Commonwealth game started in", "When was the Commonwealth game commenced?"],
+		"responses": ["1930"],
+		"context": [""]
+		},
+		{"tag": "Cricket_world_cup",
+		"patterns": ["Who has won Cricket world cup for the maximum number of times", "Cricket world cup with maximum number of times", "Cricket world cup for the maximum wins"],
+		"responses": ["Australia", "The country is Australia"],
+		"context": [""]
+		},
+		{"tag": "Football_World_Cup",
+		"patterns": ["Football World Cup has been won by which country for the maximum number of times", "Who has won maximum Football World Cups", "Which country has won maximum football world cups"],
+		"responses": ["Brazil"],
+		"context": [""]
+		},
+		{"tag": "First_Olympic",
+		"patterns": ["First Olympic Games was held in", "Which country hosted the first Olympic games", "Who hosted first Olympic games"],
+		"responses": ["Canada"],
+		"context": [""]
+		},
+		{"tag": "Caddie",
+		"patterns": ["Caddie is related to", "which sport has Caddie in it?"],
+		"responses": ["Golf"],
+		"context": [""]
+		},
+		{"tag": "Badminton",
+		"patterns": ["Which term is commonly used in Badminton and Volleyball?", "What is common word between Badminton and volleyball"],
+		"responses": ["Deuce"],
+		"context": [""]
+		},
+		{"tag": "professional sport",
+		"patterns": ["Who played 3 professional sport?", "Name a player who played more than one professional sport", "Is there anyone who played more than one professional sport?"],
+		"responses": ["Michael Jordan", "Michael Jordan. He played basketball, baseball, golf"],
+		"context": [""]
+		},
+		{"tag": "fastest",
+		"patterns": ["Who is the fastest man on earth?"],
+		"responses": ["Jermain Bolt"],
+		"context": [""]
+		},
+		{"tag": "football_rule",
+		"patterns": ["What is the rule for football?", "Name any rule of football?", "What is one of the important rules of football?"],
+		"responses": ["A rule for football is that you are not allowed to hold anyone when you tackle them.", "You are not allowed to make a physical contact when you tackle them."],
+		"context": [""]
+		},
+		{"tag": "2019_Cricket_World_Cup",
+		"patterns": ["Who did England beat in the final of the 2019 Cricket World Cup?", "Which team did England beat in the 2019 cricket world cup finals?"],
+		"responses": ["New Zealand", "New Zealand, also called as Kiwis"],
+		"context": [""]
+		},
+		{"tag": "Total_world_cups",
+		"patterns": ["how many cricket world cups have been played till now", "Total world cups played till date"],
+		"responses": ["12", "Twelve"],
+		"context": [""]
+		},
+		{"tag": "Duckworth-Lewis",
+		"patterns": ["What is Duckworth-Lewis method in cricket?", "Duckworth-Lewis method", "When is Duckworth-Lewis method used in cricket"],
+		"responses": ["It is the awarding system for victory in matches interrupted by the weather", "Its a method to decide the winner of the match which is interrupted by the weather"],
+		"context": [""]
+		},
+		{"tag": "LBW",
+		"patterns": ["What does LBW stans for in cricket", "What is LBW", "What is the full form of the abbreviation LBW"],
+		"responses": ["It means Leg befor the wicket", "It stands for leg before the wicket", "Leg before the wicket"],
+		"context": [""]
+		},
+		{"tag": "maiden_over",
+		"patterns": ["The phrase 'bowl the maiden over' means", "What is a maiden over", "Maiden over in cricket"],
+		"responses": ["Bowling 6 successive balls when the batsman doesn’t score any runs", "A batsman scores no runs in an over"],
+		"context": [""]
+		},
+		{"tag": "longest_test_match",
+		"patterns": ["longest cricket test match recorded", "What was the number of days in longest test match"],
+		"responses": ["The longest cricket match ever played was the 'Timeless test' for 9 days", "9 days at Durban between Africa and England at Durban from 3rd to 14th march, 1939"],
+		"context": [""]
+		},
+		{"tag": "Tennis_originated",
+		"patterns": ["In which Country Tennis originated?"],
+		"responses": ["France", "France, but the modern tennis was originated in England"],
+		"context": [""]
+		},
+		{"tag": "oldest_tennis",
+		"patterns": ["Which is the oldest tennis tournament in the world ??"],
+		"responses": ["Wimbeldon"],
+		"context": [""]
+		},
+		{"tag": "Stitches",
+		"patterns": ["How Many Stitches does a baseball have?"],
+		"responses": ["108"],
+		"context": [""]
+		},
+		{"tag": "gold_glove",
+		"patterns": ["What is a gold glove?", "Gold Glove", "Gold Glove in baseball"],
+		"responses": ["It’s an award for baseball players", "It’s the annual awards to the Major League Baseball players judged to have exhibited superior individual fielding performances at each fielding position in both the National League"],
+		"context": [""]
+		},
+		{"tag": "Baseball",
+		"patterns": ["What is Baseball?", "Explain Baseball", "Baseball"],
+		"responses": ["A game played with a hard, rawhide covered ball and wooden bat by two opposing teams of nine or ten players each. It is played on a field with four bases forming a diamond-shaped circuit"],
+		"context": [""]
+		},
+		{"tag": "Soccer",
+		"patterns": ["What is Soccer?", "Soccer"],
+		"responses": ["A game played with a round ball by two teams of eleven players on a field with a goal at either end; the ball is moved chiefly by kicking or by using any part of the body except the hands and arms."],
+		"context": [""]
+		},
+		{"tag": "oldest_stadiums",
+		"patterns": ["Which two cities have the oldest stadiums in major league baseball?"],
+		"responses": ["Boston and Detroit"],
+		"context": [""]
+		},
+		{"tag": "franchise",
+		"patterns": ["Which franchise was the oldest in professional football history?", "oldest franchise in professional football?"],
+		"responses": ["Arizona Cardinals", "Arizona Cardinals as they started playing professional football in 1899 in Chicago under the name of the Morgan Athletic Club."],
+		"context": [""]
+		},
+		{"tag": "Chicago_Bears",
+		"patterns": ["What were the Chicago Bears called in 1920?"],
+		"responses": ["Decatur Staleys", "Decatur Staleys, started in Decatur and named after their owner, A.E. Staley."],
+		"context": [""]
+		},
+		{"tag": "Detroit_Lions",
+		"patterns": ["From which city did the Detroit Lions start in?", "Detroit Lions origin city"],
+		"responses": ["Portsmouth, OH"],
+		"context": [""]
+		},
+		{"tag": "Ain'ts",
+		"patterns": ["Which team was given the nickname The Ain'ts during the 1980 NFL season?", "The Ain'ts is the nickname of which city?"],
+		"responses": ["New Orleans Saints", "New Orleans Saints, due to a 14-loss season in 1980."],
+		"context": [""]
+		},
+		{"tag": "Broncos",
+		"patterns": ["Which city are the Broncos from?", "Broncos home city or ground"],
+		"responses": ["Denver"],
+		"context": [""]
+		},
+		{"tag": "Dunk_Shot",
+		"patterns": ["Dunk Shot is related to which game?"],
+		"responses": ["Basketball"],
+		"context": [""]
+		},
+		{"tag": "trophy",
+		"patterns": ["What trophy is awarded to the winners of the National Championship in basketball?"],
+		"responses": ["Mens are given Edward William Todd Memorial Cup", "Womens are given Basalat Jab Trophy"],
+		"context": [""]
+		},
+		{"tag": "tallest_player",
+		"patterns": ["Who is the tallest player to have played International Basketball?", "Tallest player in International Basketball?"],
+		"responses": ["Suleiman Ali Nashnush(Libya)", "Suleiman Ali Nashnush(Libya), 8 feet"],
+		"context": [""]
+		},
+		{"tag": "Joe",
+		"patterns": ["Who is Joe Hockey?", "Joe"],
+		"responses": ["A man who knows nothing about hockey"],
+		"context": [""]
+		},
+		{"tag": "Violent_checking",
+		"patterns": ["Violently checking an opponent into the boards is known as"],
+		"responses": ["Boarding", "Boarding is illegal and merits a penalty."],
+		"context": [""]
+		},
+		{"tag": "holes",
+		"patterns": ["How many holes are there in a pro round of golf?"],
+		"responses": ["18", "Golf normally consists of a front nine and a back nine which makes 18 holes."],
+		"context": [""]
+		},
+		{"tag": "Tiger_Woods",
+		"patterns": ["What is Tiger Woods real first name?", "What is Tiger Woods full real name?"],
+		"responses": ["Eldrick", "Eldrick Tont Woods is his real full name"],
+		"context": [""]
+		},
+		{"tag": "common_term",
+		"patterns": ["Which common term is often used for the clubhouse?", "Which common term used for the pub close to the course?"],
+		"responses": ["The nineteenth hole"],
+		"context": [""]
+		},
+		{"tag": "FIA",
+		"patterns": ["Formula 1 sanctioned by which authority?"],
+		"responses": ["FIA", "FIA: Federation of International Automobile"],
+		"context": [""]
+		},
+		{"tag": "first_F1_race",
+		"patterns": ["When was the first F1 race held?", "In which year was the first F1 race held?", "What was the year of first F1 race?"],
+		"responses": ["1947", "The year was 1947"],
+		"context": [""]
+		},
+		{"tag": "F1_track",
+		"patterns": ["Which track held the first F1 race?", "First F1 racetrack?"],
+		"responses": ["Silverstone, it is located in Britain", "Silverstone"],
+		"context": [""]
+		},
+		{"tag": "FINA",
+		"patterns": ["What does FINA stand for in world of swimming?", "FINA full form"],
+		"responses": ["Federation Internationale de Natation", "Federation Internationale de Natation, was founded in 1908, and is headquartered in Lausanne."],
+		"context": [""]
+		},
+		{"tag": "clubhouse",
+		"patterns": ["Which common slang term is often used for the clubhouse?", "Which common term used for the pub close to the course)?"],
+		"responses": ["The nineteenth hole"],
+		"context": [""]
+		},
+		{"tag": "strokes",
+		"patterns": ["How many different standard strokes are there?", "Name the standard swimming strokes"],
+		"responses": ["Four", "The standard strokes are front crawl, backstroke, breaststroke, and butterfly."],
+		"context": [""]
+		},
+		{"tag": "longest_recorded_point",
+		"patterns": ["How many minutes was the longest recorded point in the history of tennis?"],
+		"responses": ["29 minutes"],
+		"context": [""]
+		},
+		{"tag": "NFL",
+		"patterns": ["What is the only team in the NFL to neither host nor play in the Super Bowl?"],
+		"responses": ["Cleveland Browns"],
+		"context": [""]
+		},
+		{"tag": "Americans",
+		"patterns": ["Americans have won the Formula 1 Motor Racing Championship", "How many Americans have won the Formula 1 Motor Racing Championship"],
+		"responses": ["Phil Hill and Mario Andretti", "Two"],
+		"context": [""]
+		},
+		{"tag": "Bowl",
+		"patterns": ["Who scored the most points in a single Super Bowl", "Which team scored the most points in one single Super Bowl"],
+		"responses": ["The San Francisco 49ers"],
+		"context": [""]
+		},
+		{"tag": "Yankee",
+		"patterns": ["What is a yankee", "What is a yankee in horse racing?"],
+		"responses": ["Yankee means 11 individual bets", "11 individual bets"],
+		"context": [""]
+		},
+		{"tag": "TCCB",
+		"patterns": ["In English cricket what do the letters TCCB stand for?", "TCCB full form??"],
+		"responses": ["Test and County Cricket Board"],
+		"context": [""]
+		},
+		{"tag": "seven_wonders",
+         "patterns": ["one of the seven wonders in the world", "seven wonders of the world" ],
+         "responses": ["Colosseum", "Taj Mahal", "Great Wall of China", "Chichen Itza", "Petra", "Machu Picchu", "Christ the Redeemer" ],
+         "context": [""]
+    },
+    {"tag": "turn_off_electronic",
+     "patterns": ["Why do you need to turn off all your electronic devices before an airplane takes off and lands?", "Why do you turn off electronic devices in a flight", "What is the reason for trurning off cellphones in a airplane", "Why do you need to turn off all your mobile phones before in an airplane" ],
+     "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies" ],
+     "context": [""]
+    },
+    {"tag": "unesco_india",
+     "patterns": ["Name one of the UNESCO heritage sites in India", "Name one UNESCO heritage site in India", "UNESCO heritage site in India" ],
+     "responses": ["Hampi", "Taj Mahal", "Ajanta Caves", "Ellora Caves", "Agra Fort", "Manas Wildlife Sanctuary", "Elephanta Caves", "Sundarbans National Park", "Red Fort Complex" ],
+     "context": [""]
+    },
+    {"tag": "unesco_sites_us",
+     "patterns": ["Name one of the UNESCO heritage sites in USA", "Name one UNESCO heritage site in USA", "UNESCO heritage site in USA", "UNESCO heritage site in US", "Name one of the UNESCO heritage sites in US" ],
+     "responses": ["Statue of Liberty", "Yellowstone National Park", "Grand Canyon National Park", "Independence Hall", "Great Smoky Mountains", "University of Virginia" ],
+     "context": [""]
+    },
+    {"tag": "statue_of_liberty",
+     "patterns": ["Statue of Liberty made of", "What is Statue of Liberty made of", "Materials of Statue of Liberty" ],
+     "responses": ["The internal structure of the Statue of Liberty is cast iron and stainless steel, but the outside is copper that runs about 2.5 millimeters thick.", "A combination of terracotta, plaster of Paris, special alloys of metals, iron bas-relief and some other flexible and strong elements were used to construct the Statue of liberty" ],
+     "context": [""]
+    },
+    {"tag": "smallest_country",
+     "patterns": ["Smallest country in the world", "Which is the smallest country in the world" ],
+     "responses": ["Vatican City" ],
+     "context": [""]
+    },
+    {"tag": "largest_country",
+     "patterns": ["Largest country in the world", "Which is the largest country in the world" ],
+     "responses": ["Russia" ],
+     "context": [""]
+    },
+    {"tag": "largest_continent",
+     "patterns": ["Largest continent in the world", "Which is the largest continent in the world" ],
+     "responses": ["Asia" ],
+     "context": [""]
+    },
+    {"tag": "spain_capital",
+     "patterns": ["What is the capital of Spain", "Which is the capital of Spain" ],
+     "responses": ["Madrid" ],
+     "context": [""]
+    },
+    {"tag": "karaoke_meaning",
+     "patterns": ["What does the word karaoke mean in Japanese", "karaoke mean in Japanese" ],
+     "responses": ["Empty Orchestra" ],
+     "context": [""]
+    },
+    {"tag": "tallest_statue",
+     "patterns": ["tallest statue in the world", "which is the tallest statue in the world" ],
+     "responses": ["The Statue of Unity" ],
+     "context": [""]
+    },
+    {"tag": "south_Africa_mountain_range",
+     "patterns": ["name one mountain ranges located in South Africa", "Name one of the mountain ranges located in South Africa" ],
+     "responses": ["Atlas", "Simien", "Drakensberg" ],
+     "context": [""]
+    },
+    {"tag": "black_sea",
+     "patterns": ["Why is black sea called black", "reason of black sea being called black"],
+     "responses": ["The water of blck sea is black"],
+     "context": [""]
+    },
+    {"tag": "dead_sea",
+     "patterns": ["Why is dead sea called dead", "reason of dead sea being called dead"],
+     "responses": ["he sea is called dead because its high salinity prevents macroscopic aquatic organisms, such as fish and aquatic plants, from living in it"],
+     "context": [""]
+    },
+    {"tag": "most_visited",
+     "patterns": ["Name one of the most visited cities in thw world", "Most visited city in the world"],
+     "responses": ["Bangkok", "London", "Melbourne", "Udaipur", "Dubai"],
+     "context": [""]
+    },
+    {"tag": "jewel_of_the_italian_lakes",
+     "patterns": ["Which lake is called jewel of the Italian Lakes", "jewel of the Italian Lakes"],
+     "responses": ["Lake Como"],
+     "context": [""]
+    },
+    {"tag": "island_of_spice",
+     "patterns": ["Which island country is called island of spice", "island of spice", "island country that is called island of spice"],
+     "responses": ["Grenada"],
+     "context": [""]
+    },
+    {"tag": "peninsula",
+     "patterns": ["What is a peninsula", "peninsula"],
+     "responses": ["A peninsula is a landform surrounded by water on the majority of its border"],
+     "context": [""]
+    },
+    {"tag": "michelin_stars",
+     "patterns": ["what are Michelin stars" ],
+     "responses": ["Michelin stars are a rating system used by the red Michelin Guide to grade restaurants on their quality"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "disney_world",
+     "patterns": ["where is disney world located", "disney world", "walt disney location"],
+     "responses": ["Florida"],
+     "context": [""]
+    },
+    {"tag": "coldest_temperature",
+     "patterns": ["Coldest temperature recorded on earth", "coldest temperature on earth" ],
+     "responses": ["minus 144"],
+     "context": [""]
+    },
+    {"tag": "busiest_airport",
+     "patterns": ["Which is the busiest airport in the world", "busiest airport in the world"],
+     "responses": ["Hartsfield–Jackson Atlanta International Airport"],
+     "context": [""]
+    },
+    {"tag": "smallest_continent",
+     "patterns": ["Smallest continent in the world", "Which is the smallest continent in the world" ],
+     "responses": ["Australia"],
+     "context": [""]
+    },
+    {"tag": "stars_on_American_flag",
+     "patterns": ["what do the stars on american flag represent", "stars on american flag", "what are the stars on american flag"],
+     "responses": ["The stars on the American flag each represent a state of United States,"],
+     "context": [""]
+    },
+    {"tag": "golden_gate",
+     "patterns": ["Where is golden gate bridge located?", "Location of golden gate bridge", "Where is the golden gate bridge"],
+     "responses": ["California"],
+     "context": [""]
+    },
+    {"tag": "hollywood",
+     "patterns": ["Where is Hollywood located", "Where is Hollywood"],
+     "responses": ["Los Angeles"],
+     "context": [""]
+    },
+    {"tag": "japan",
+     "patterns": ["What is Japan called in Japan?", "What is another name for Japan", "What is Japan also known as"],
+     "responses": ["Nihon", "Nippon"],
+     "context": [""]
+    },
+    {"tag": "largest_ocean",
+     "patterns": ["Which is the Largest ocean in the world", "Which is the deepest ocean in the world", "Deepest ocean in the world", "Largest ocean in the world"],
+     "responses": ["Pacific Ocean"],
+     "context": [""]
+    },
+    {"tag": "silicon_valley",
+     "patterns": ["Which city is called the Silicon valley of India", "Silicon valley of India"],
+     "responses": ["Bangalore"],
+     "context": [""]
+    },
+    {"tag": "facebook",
+     "patterns": ["Who invented facebook", "Facebook was invented by?"],
+     "responses": ["Mark Zuckerberg, Eduardo Saverin, Dustin Moskovitz and Chris Hughes"],
+     "context": [""]
+    },
+    {"tag": "nanomaterials",
+     "patterns": ["How small are nanomaterails? ", "How small are nano particles?" ],
+     "responses": ["Nanomaterials are up to 10 000 times smaller than the width of a human hair", "In the International System of Units, nano means one-billionth of a meter."],
+     "context": [""]
+    },
+    {"tag": "iot_devices",
+     "patterns": ["Name one iot device", "Give an example for a Iot"],
+     "responses": ["Smart Assistants", "Smart Cars", "Smart TV", "Smart Wearables"],
+     "context": [""]
+    },
+    {"tag": "google_ceo",
+     "patterns": ["Who is Google's first CEO?", "Google first CEO" ],
+     "responses": ["Eric Schmidt"],
+     "context": [""]
+    },
+    {"tag": "aws",
+     "patterns": ["What does AWS stand for?", "What is the full form of AWS?"],
+     "responses": ["Amazon Web Services"],
+     "context": [""]
+    },
+    {"tag": "cyber_warfare",
+     "patterns": ["What is a cyberwarfare?"],
+     "responses": ["Cyberwarfare is the use of technology to attack a nation, causing comparable harm to actual warfare"],
+     "context": [""]
+    },
+    {"tag": "lan",
+     "patterns": ["Full form of LAN", "What does LAN stand for?"],
+     "responses": ["Local Area Network"],
+     "context": [""]
+    },
+    {"tag": "facebook_year",
+     "patterns": ["Which year was facebook founded?", "facebook was founded in the year?" ],
+     "responses": ["2004"],
+     "context": [""]
+    },
+    {"tag": "sos",
+     "patterns": ["What is SOS?", "SOS fullform", "What are the phrases SOS full form associated with?"],
+     "responses": ["Save Our Souls", "Save Our Ship"],
+     "context": [""]
+    },
+    {"tag": "pink_city_india",
+     "patterns": ["Which city is called pink city of india?", "Pink city of India"],
+     "responses": ["Jaipur"],
+     "context": [""]
+    },
+    {"tag": "garden_city_india",
+     "patterns": ["Which city is called garden city of india?", "garden city of India"],
+     "responses": ["Bangalore"],
+     "context": [""]
+    },
+    {"tag": "wan",
+     "patterns": ["Full form of WAN", "What does WAN stand for?"],
+     "responses": ["Local Area Network"],
+     "context": [""]
+    },
+    {"tag": "royal_mile",
+     "patterns": ["The Royal Mile is located in what city?", "What city is the Royal Mile located in?"],
+     "responses": ["Edinburgh"],
+     "context": [""]
+    },
+    {"tag": "populous_city_australia",
+     "patterns": ["Which is the most populous city in australia?", "most populous city in australia"],
+     "responses": ["Sydney"],
+     "context": [""]
+    },
+    {"tag": "arabian_sea_depth",
+     "patterns": ["How deep is Arabian Sea?", "Depth of Arabian Sea"],
+     "responses": ["15,262 feet"],
+     "context": [""]
+    },
+    {"tag": "country_q",
+     "patterns": ["Which is the only country name that starts with Q?", "Country name with Q" ],
+     "responses": ["Qatar"],
+     "context": [""]
+    },
+    {"tag": "united_country",
+     "patterns": ["How many countries begin with the word United?" ],
+     "responses": ["seven"],
+     "context": [""]
+    },
+    {"tag": "countryname_j",
+     "patterns": ["How many countries begin with the letter j?", "NUmber of countries that begin with j"],
+     "responses": ["three"],
+     "context": [""]
+    },
+    {"tag": "worlds_youngest_country",
+     "patterns": ["Which is the world's youngest country?", "World's youngest country"],
+     "responses": ["South Sudan"],
+     "context": [""]
+    },
+    {"tag": "afghanistan_language",
+     "patterns": ["Name one langauge spoken in Afghanistan", "Name one language spoken by people of Afghanistan" ],
+     "responses": ["Dari", "Pashto"],
+     "context": [""]
+    },
+    {"tag": "country_fewest_trees",
+     "patterns": ["Which is the country with fewest trees?", "Fewest trees"],
+     "responses": ["Vatican city"],
+     "context": [""]
+    },
+    {"tag": "eiffel_tower",
+     "patterns": ["Where is the Eiffel Tower located?"],
+     "responses": ["Paris"],
+     "context": [""]
+    },
+    {"tag": "cloudcomputing_cons",
+     "patterns": ["What are the disadvantages of cloud computing?", "What are the cons of cloud computing?", "What are the negatives of cloud computing?"],
+     "responses": ["A constant internet connection is required, performance can be slow due to the number of users on the internet"],
+     "context": [""]
+    },
+    {"tag": "transistor",
+     "patterns": ["What is a transistor?"],
+     "responses": ["A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power"],
+     "context": [""]
+    },
+    {"tag": "microprocessor",
+     "patterns": ["What is a microprocessor?"],
+     "responses": ["A computer processor that incorporates the functions of a central processing unit on a single integrated circuit, or sometimes up to 8 integrated circuits"],
+     "context": [""]
+    },
+    {"tag": "ethernet",
+     "patterns": ["What is ethernet?"],
+     "responses": ["Family of computer networking technologies commonly used in local area networks, metropolitan area networks and wide area networks"],
+     "context": [""]
+    },
+    {"tag": "bootstrapping",
+     "patterns": ["What is bootstrapping?", "What is booting?"],
+     "responses": ["The process of starting a computer", "Refers to a self-starting process of computer that is supposed to proceed without external input"],
+     "context": [""]
+    },
+    {"tag": "tmux",
+     "patterns": ["What is a Tmux?"],
+     "responses": ["Tmux is a terminal multiplexer, an advanced tool for running multiple tasks on the command line", "Tmux is a terminal multiplexer for Unix-like operating systems"],
+     "context": [""]
+    },
+    {"tag": "motherboard",
+     "patterns": ["What is a computer motherboard?", "What is a motherboard"],
+     "responses": ["The motherboard is a printed circuit board and foundation of a computer that is the biggest board in a computer chassis", "A motherboard provides connectivity between the hardware components of a computer, like the processor , memory, hard drive, and video card"],
+     "context": [""]
+    },
+    {"tag": "bits",
+     "patterns": ["What are bits?", "Define bits", "What is a binary digit?"],
+     "responses": ["A bit is the smallest unit of data in a computer. A bit has a single binary value, either 0 or 1", "The bit is a basic unit of information in information theory, computing, and digital communications"],
+     "context": [""]
+    },
+    {"tag": "modem",
+     "patterns": ["What is a modem?"],
+     "responses": ["A modem is a hardware device that converts data into a format suitable for a transmission medium so that it can be transmitted from one computer to another", "A combined device for modulation and demodulation, for example, between the digital data of a computer and the analog signal of a telephone line"],
+     "context": [""]
+    },
+    {"tag": "emails_to_spam",
+     "patterns": ["Why do emails go to spam?", "How do emails end up in spam?" ],
+     "responses": ["The Sender Information is Inaccurate", "There is a large image with minimal text", "There is incorrect spelling and grammer"],
+     "context": [""]
+    },
+    {"tag": "computer_virus",
+     "patterns": ["Why are computer viruses dangerous?", "why are computer viruses bad?", "why are computer viruses a thing?", "Why are viruses harmful to your computer?"],
+     "responses": ["A virus could encrypt files and demand payment to unlock them", "Viruses could give a hacker control to your computer", "Viruses could delete or corrupt files"],
+     "context": [""]
+    },
+    {"tag": "computer_security",
+     "patterns": ["Why is computer security important?", "Why do we need computer security?"],
+     "responses": ["Computer security is important because it keeps your information protected", "Computer security is important because a break in security can cause harmful and potentially major issues"],
+     "context": [""]
+    },
+    {"tag": "firewall",
+     "patterns": ["What is a computer firewall?", "What is a firewall?", "Define Firewall"],
+     "responses": ["The firewall is software that acts as the security systems to protect your computer system from the untrusted links from the networks like the internet", "a part of a computer system or network which is designed to block unauthorized access while permitting outward communication"],
+     "context": [""]
+    },
+    {"tag": "programming_language",
+     "patterns": ["Name one popular programming language", "Give an example for a programming language" ],
+     "responses": ["Java", "JavaScript", "Python", "Php", "R", "C"],
+     "context": [""]
+    },
+    {"tag": "web_cookies",
+     "patterns": ["What are cookies in technological terms?", "What is a cookie?", "What are cookies?", "What are web cookies?"],
+     "responses": ["A piece of code or data created by a web server and stored on a user's computer used to keep track of the user's usage patterns and preferences", "A cookie is the term given to describe a type of message that is given to a web browser by a web server. "],
+     "context": [""]
+    },
+    {"tag": "web",
+     "patterns": ["What is web?", "What is www?", "World Wide Web is defined as?"],
+     "responses": ["Information system where documents and other web resources are identified by URLs", "Part of the Internet that can be looked at with a special program called a browser and that is made up of many documents which are linked together", "A network of online content that is formatted in HTML and accessed via HTTP"],
+     "context": [""]
+    },
+    {"tag": "data_analysis",
+     "patterns": ["What is data analysis?", "What is analyzing data?", "How is Data Analysis defined?"],
+     "responses": ["Data analysis is a process of inspecting, cleansing, transforming and modeling data with the goal of discovering useful information, informing conclusion and supporting decision making"],
+     "context": [""]
+    },
+    {"tag": "cryptography",
+     "patterns": ["What is cryptography", "Describe cryptography", "What does cryptography mean"],
+     "responses": ["The art of writing or solving codes", "Practice and study of techniques for secure communication in the presence of third parties called adversaries", "Cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages"],
+     "context": [""]
+    },
+    {"tag": "walkman",
+     "patterns": ["First portable music device", "Which is the first portable music device?" ],
+     "responses": ["Walkman" ],
+     "context": [""]
+    },
+    {"tag": "radio",
+     "patterns": ["Radio Inventor", "Who invented Radio", "Radio was invented by?"],
+     "responses": ["Guglielmo Marconi"],
+     "context": [""]
+    },
+    {"tag": "intranet",
+     "patterns": ["What is intranet?", "Meaning of Intranet"],
+     "responses": ["Local or restricted communications network, especially a private network created using World Wide Web software", "Network operating like the World Wide Web but having access restricted to a limited group of authorized users such as employees of a company"],
+     "context": [""]
+    },
+    {"tag": "apple_founder",
+     "patterns": ["Who is the founder of Apple Computers?", "Founder of Apple Computers?", "Founder of Apple"],
+     "responses": ["Steve Jobs"],
+     "context": [""]
+    },
+    {"tag": "father_computer",
+     "patterns": ["Who is known as the father of Computers", "father of Computer", "Who is called the father of Computers", "Who is known the father of Computers"],
+     "responses": ["Charles Babbage"],
+     "context": [""]
+    },
+    {"tag": "quora",
+     "patterns": ["Which is the famous question and answer site founded in 2010" ],
+     "responses": ["Quora"],
+     "context": [""]
+    },
+    {"tag": "algorithm",
+     "patterns": ["What is an algorithm", "Describe algorithm"],
+     "responses": ["Self contained sequence of actions to be performed in computing and mathematics", "Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer", "Specific and logical procedure to be followed in order to achieve specific results, or to solve a math problem"],
+     "context": [""]
+    },
+    {"tag": "malware",
+     "patterns": ["What is malware?", "Describe Malware"],
+     "responses": ["Forms of intrusive computer software including viruses, spyware, worms, and Trojan horses", "Software intentionally designed to cause damage to a computer, server, client, or computer network"],
+     "context": [""]
+    },
+    {"tag": "undo_key",
+     "patterns": ["Which keyboard letter do we press with the control button to undo an action", "keyboard letter we press with the control button to undo an action", "Undo key"],
+     "responses": ["Z"],
+     "context": [""]
+    },
+    {"tag": "snapchat",
+     "patterns": ["Who created snapchat?", "Snapchat was created by?" ],
+     "responses": ["Evan Spiegel, Bobby Murphy, and Reggie Brown"],
+     "context": ["search_hospital_by_params"]
+    },
+    {"tag": "nlu",
+     "patterns": ["What does NLU stand for?","Full form of NLP", "What is the full form of NLP?"],
+     "responses": ["Natural Language Understanding"],
+     "context": [""]
+    },
+    {"tag": "regular_expression",
+     "patterns": ["What is a regular expression?", "What is the meaning of regular expression?"],
+     "responses": ["A regular expression is a set of characters that describe a pattern in any text", "A regular expression is referred to a sequence of characters that define a search pattern"],
+     "context": [""]
+    },
+    {"tag": "training_set",
+     "patterns": ["What is training set?", "Meaning of Training set in nlp"],
+     "responses": ["The training set is the material through which the computer learns how to process information"],
+     "context": [""]
+    },
+    {"tag": "test_set",
+     "patterns": ["What is test set?", "Meaning of test set in nlp"],
+     "responses": ["A test set is used to test a machine learning program after it has been trained on an initial training data set. "],
+     "context": [""]
+    },
+    {"tag": "validation_set",
+     "patterns": ["What is validation set?", "Meaning of Validation set in nlp"],
+     "responses": ["A validation set is a set of data used to train artificial intelligence with the goal of finding and optimizing the best model to solve a given problem"],
+     "context": [""]
+    },
+    {"tag": "first_mobile",
+     "patterns": ["Which is the first mobile company?", "Which is the first cellphone company?", "First company to produce mobile phones", "First company to produce cell phones"],
+     "responses": ["Motorola"],
+     "context": [""]
+    },
+    {"tag": "mexico",
+     "patterns": ["What is Mexico best known for?", "What is Mexico famous for?", "What is the best thing about Mexico?"],
+     "responses": ["Beaches and Resorts"],
+     "context": [""]
+    },
+    {"tag": "blue_sky",
+     "patterns": ["Why is the color of the sky blue", "Reason of blue color of sky", "Why is sky blue in color?" ],
+     "responses": ["Blue light is more strongly scattered than other colors"],
+     "context": [""]
+    },
+    {"tag": "ip",
+     "patterns": ["What is full form of IP?", "What does IP stand for?"],
+     "responses": ["Internet Protocol"],
+     "context": [""]
+    },
+    {"tag": "number_of_continents",
+     "patterns": ["How many continents are there?", "What is the total number of continents?"],
+     "responses": ["There are seven continents in the world"],
+     "context": [""]
+    },
+    {"tag": "covid",
+     "patterns": ["What is corona virus?", "What is covid 19?"],
+     "responses": ["Coronavirus disease COVID 19 is an infectious disease caused by a newly discovered coronavirus"],
+     "context": [""]
+    },
+    {"tag": "corona_virus_myths",
+     "patterns": ["Mention one of the myths about corona virus", "Name one of the corona virus myth"],
+     "responses": ["Spraying chlorine or alcohol on skin kills viruses in the body", "Only older adults and young people are at risk", "Children cannot catch COVID 19"],
+     "context": [""]
+    },
+    {"tag": "popular_suvs",
+     "patterns": ["Most popular suvs in America", "Which are the best cars in America?", "Name one popular car in America"],
+     "responses": ["Nissan Rogue", "Chevrolet Equinox", "Honda CR V", "Ford escape", "Jeep Wrangler"],
+     "context": [""]
+    },
+    {"tag": "biggest_mammal",
+     "patterns": ["Which is the biggest mammal in the world?", "Name the biggest mammal in the world" ],
+     "responses": ["Blue Whale"],
+     "context": [""]
+    },
+    {"tag": "blood_group",
+     "patterns": ["Name the blood groups", "Which are the human blood groups?"],
+     "responses": ["A+, A-,B+,B-,AB+,AB-,O+,O-"],
+     "context": [""]
+    },
+    {"tag": "smelliest_flower",
+     "patterns": ["Which is the smelliest flower in the world?"],
+     "responses": ["Corpse flower"],
+     "context": [""]
+    },
+    {"tag": "planet",
+     "patterns": ["How many planets are there?", "Number of planets"],
+     "responses": ["There are nine planets in the universe"],
+     "context": [""]
+    },
+    {"tag": "biggest_epic",
+     "patterns": ["Which is the biggest epic in the world?", "Which is the longest epic in the world?"],
+     "responses": ["Mahabharata"],
+     "context": [""]
+    },
+    {"tag": "oldest_civilisation",
+     "patterns": ["Who is the oldest civilisation?"],
+     "responses": ["Mesopotamia Civilisation"],
+     "context": [""]
+    },
+    {"tag": "african_tip",
+     "patterns": ["What is african tip known as?", "What is the tip of Africa known as?"],
+     "responses": ["Cape of Good Hope"],
+     "context": [""]
+    },
+    {"tag": "photosynthesis",
+     "patterns": ["What is photosynthesis?", "Define photosynthesis"],
+     "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+     "context": [""]
+    },
+    {"tag": "number_bones",
+     "patterns": ["How many bones does an adult have?", "Number of bones in a human body?" ],
+     "responses": ["213"],
+     "context": [""]
+    },
+    {"tag": "vibgyor",
+     "patterns": ["Colors in VIBGYOR", "VIBGYOR", "colors in rainbow" ],
+     "responses": ["Violet, Indigo, Blue, Green, Yellow, Orange and Red"],
+     "context": [""]
+    },
+    {"tag": "artificial_intelligence",
+     "patterns": ["What is artificial intelligence?", "What is the meaning of artificial intelligence?"],
+     "responses": ["Artificial intelligence, sometimes called machine intelligence, is intelligence demonstrated by machines"],
+     "context": [""]
+    },
+    {"tag": "multiple_regression_analysis",
+     "patterns": ["What does multiple regression analysis do?", "What does multiple regression analysis tell you?"],
+     "responses": ["multiple linear regression analysis helps us to understand how much will the dependent variable change when we change the independent variables"],
+     "context": [""]
+    },
+    {"tag": "machine_translation",
+     "patterns": ["What is machine translation?", "What does machine translation mean?"],
+     "responses": ["It is a sub field of computational linguistics that investigates the use of software to translate text or speech from one language to another."],
+     "context": [""]
+    },
+    {"tag": "sentiment_analysis ",
+     "patterns": ["What is sentiment analysis?", "What does sentiment analysis mean?"],
+     "responses": ["The use of Natural Language Processing techniques to extract subjective information from a piece of text. i.e. whether an author is being subjective or objective or even positive or negative"],
+     "context": [""]
+    },
+    {"tag": "corpus",
+     "patterns": ["What is a corpus?", "What is corpus in nlp?"],
+     "responses": ["Text corpus is a large and structured set of texts nowadays usually electronically stored and processed"],
+     "context": [""]
+    },
+    {"tag": "stemming",
+     "patterns": ["What is stemming?", "stemming", "stemming meaning", "What is meant by stemming?"],
+     "responses": ["With stemming, words are reduced to their word stems"],
+     "context": [""]
+    },
+    {"tag": "normalization",
+     "patterns": ["What is normalization?", "normalization", "normalization meaning", "What is meant by normalization?"],
+     "responses": ["Normalization is a process that converts a list of words to a more uniform sequence"],
+     "context": [""]
+    },
+    {"tag": "tokenization",
+     "patterns": ["What is tokenisation?", "Tokenisation", "Tokenisation meaning", "What is meant by tokenisation?"],
+     "responses": [" It is basically a task of chopping a character into pieces, called as token, and throwing away the certain characters at the same time, like punctuation", "Tokenization is the process of replacing sensitive data with unique identification symbols that retain all the essential information about the data without compromising its security"],
+     "context": [""]
+    },
+    {"tag": "simple_linear_regression",
+     "patterns": ["What is simple linear regression?"],
+     "responses": [" It establishes the relationship between two variables using a straight line"],
+     "context": [""]
+    },
+    {"tag": "stop_words",
+     "patterns": ["What are stop words?", "meaning of stop words"],
+     "responses": ["In computing, stop words are words which are filtered out before or after processing of natural language data"],
+     "context": [""]
+    },
+    {"tag": "nlp",
+     "patterns": ["What does nlp stand for?", "Full form of nlp"],
+     "responses": ["natural language processing" ],
+     "context": [""]
+    },
+    {"tag": "pandemic",
+     "patterns": ["What is a pandemic?", "Define Pandemic", "What does a pandemic mean?"],
+     "responses": ["A disease prevalent over a whole country or the world" ],
+     "context": [""]
+    },
+    {"tag": "ms_office_programs",
+     "patterns": ["List a few MS Office programs", "What are few MS office programs?" ],
+     "responses": ["Access, Excel, Outlook, Word, Powerpoint" ],
+     "context": [""]
+    }
+  ]
+}

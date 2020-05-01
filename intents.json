@@ -1,0 +1,578 @@
+{"intents": [
+         {"tag": "seven_wonders",
+         "patterns": ["one of the seven wonders in the world", "seven wonders of the world" ],
+         "responses": ["Colosseum", "Taj Mahal", "Great Wall of China", "Chichen Itza", "Petra", "Machu Picchu", "Christ the Redeemer" ],
+         "context": [""]
+        },
+        {"tag": "turn_off_electronic",
+         "patterns": ["Why do you need to turn off all your electronic devices before an airplane takes off and lands?", "Why do you turn off electronic devices in a flight", "What is the reason for trurning off cellphones in a airplane", "Why do you need to turn off all your mobile phones before in an airplane" ],
+         "responses": ["Cellular phones in airplanes is banned because, at the altitudes we fly, too many cells are hit by any one transmission." ],
+         "context": [""]
+        },
+        {"tag": "unesco_india",
+         "patterns": ["Name one of the UNESCO heritage sites in India", "Name one UNESCO heritage site in India", "UNESCO heritage site in India" ],
+         "responses": ["Hampi", "Taj Mahal", "Ajanta Caves", "Ellora Caves", "Agra Fort", "Manas Wildlife Sanctuary", "Elephanta Caves", "Sundarbans National Park", "Red Fort Complex" ],
+         "context": [""]
+        },
+        {"tag": "unesco_sites_us",
+         "patterns": ["Name one of the UNESCO heritage sites in USA", "Name one UNESCO heritage site in USA", "UNESCO heritage site in USA", "UNESCO heritage site in US", "Name one of the UNESCO heritage sites in US" ],
+         "responses": ["Statue of Liberty", "Yellowstone National Park", "Grand Canyon National Park", "Independence Hall", "Great Smoky Mountains", "University of Virginia" ],
+         "context": [""]
+        },
+        {"tag": "statue_of_liberty",
+         "patterns": ["Statue of Liberty made of", "What is Statue of Liberty made of?", "Materials of Statue of Liberty" ],
+         "responses": ["The internal structure of the Statue of Liberty is cast iron and stainless steel, but the outside is copper that runs about 2.5 millimeters thick.", "A combination of terracotta, plaster of Paris, special alloys of metals, iron bas-relief and some other flexible and strong elements were used." ],
+         "context": [""]
+        },
+        {"tag": "smallest_country",
+         "patterns": ["Smallest country in the world", "Which is the smallest country in the world" ],
+         "responses": ["Vatican City" ],
+         "context": [""]
+        },
+        {"tag": "largest_country",
+         "patterns": ["Largest country in the world", "Which is the largest country in the world" ],
+         "responses": ["Russia" ],
+         "context": [""]
+        },
+        {"tag": "largest_continent",
+         "patterns": ["Largest continent in the world", "Which is the largest continent in the world" ],
+         "responses": ["Asia" ],
+         "context": [""]
+        },
+        {"tag": "spain_capital",
+         "patterns": ["What is the capital of Spain?", "Which is the capital of Spain" ],
+         "responses": ["Madrid" ],
+         "context": [""]
+        },
+        {"tag": "karaoke_meaning",
+         "patterns": ["What does the word karaoke mean in Japanese", "karaoke mean in Japanese" ],
+         "responses": ["Empty Orchestra" ],
+         "context": [""]
+        },
+        {"tag": "tallest_statue",
+         "patterns": ["tallest statue in the world", "which is the tallest statue in the world" ],
+         "responses": ["The Statue of Unity" ],
+         "context": [""]
+        },
+        {"tag": "south_Africa_mountain_range",
+         "patterns": ["name one mountain ranges located in South Africa", "Name one of the mountain ranges located in South Africa" ],
+         "responses": ["Atlas", "Simien", "Drakensberg" ],
+         "context": [""]
+        },
+        {"tag": "black_sea",
+         "patterns": ["Why is black sea called black?", "reason of black sea being called black"],
+         "responses": ["The water of black sea is black."],
+         "context": [""]
+        },
+        {"tag": "dead_sea",
+         "patterns": ["Why is dead sea called dead", "reason of dead sea being called dead"],
+         "responses": ["he sea is called dead because its high salinity prevents macroscopic aquatic organisms, such as fish and aquatic plants, from living in it"],
+         "context": [""]
+        },
+        {"tag": "most_visited",
+         "patterns": ["Name one of the most visited cities in thw world", "Most visited city in the world"],
+         "responses": ["Bangkok", "London", "Melbourne", "Udaipur", "Dubai"],
+         "context": [""]
+        },
+        {"tag": "jewel_of_the_italian_lakes",
+         "patterns": ["Which lake is called jewel of the Italian Lakes", "jewel of the Italian Lakes"],
+         "responses": ["Lake Como"],
+         "context": [""]
+        },
+        {"tag": "island_of_spice",
+         "patterns": ["Which island country is called island of spice?", "island of spice", "island country that is called island of spice"],
+         "responses": ["Grenada"],
+         "context": [""]
+        },
+        {"tag": "peninsula",
+         "patterns": ["What is a peninsula", "peninsula"],
+         "responses": ["A peninsula is a landform surrounded by water on the majority of its border"],
+         "context": [""]
+        },
+        {"tag": "michelin_stars",
+         "patterns": ["what are Michelin stars?" ],
+         "responses": ["Michelin stars are a rating system used by the red Michelin Guide to grade restaurants on their quality."],
+         "context": [""]
+        },
+        {"tag": "disney_world",
+         "patterns": ["Where is disney world located?", "disney world", "walt disney location"],
+         "responses": ["Florida"],
+         "context": [""]
+        },
+        {"tag": "coldest_temperature",
+         "patterns": ["Coldest temperature recorded on earth", "coldest temperature on earth" ],
+         "responses": ["minus 144"],
+         "context": [""]
+        },
+        {"tag": "busiest_airport",
+         "patterns": ["Which is the busiest airport in the world", "busiest airport in the world"],
+         "responses": ["Hartsfield–Jackson Atlanta International Airport"],
+         "context": [""]
+        },
+        {"tag": "smallest_continent",
+         "patterns": ["Smallest continent in the world", "Which is the smallest continent in the world" ],
+         "responses": ["Australia"],
+         "context": [""]
+        },
+        {"tag": "stars_on_American_flag",
+         "patterns": ["what do the stars on american flag represent", "stars on american flag", "what are the stars on american flag"],
+         "responses": ["The stars on the American flag each represent a state of United States"],
+         "context": [""]
+        },
+        {"tag": "golden_gate",
+         "patterns": ["Where is golden gate bridge located?", "Location of golden gate bridge", "Where is the golden gate bridge"],
+         "responses": ["California"],
+         "context": [""]
+        },
+        {"tag": "hollywood",
+         "patterns": ["Where is Hollywood located", "Where is Hollywood"],
+         "responses": ["Los Angeles"],
+         "context": [""]
+        },
+        {"tag": "japan",
+         "patterns": ["What is Japan called in Japan?", "What is another name for Japan", "What is Japan also known as"],
+         "responses": ["Nihon", "Nippon"],
+         "context": [""]
+        },
+        {"tag": "largest_ocean",
+         "patterns": ["Which is the Largest ocean in the world", "Which is the deepest ocean in the world", "Deepest ocean in the world", "Largest ocean in the world"],
+         "responses": ["Pacific Ocean"],
+         "context": [""]
+        },
+        {"tag": "silicon_valley",
+         "patterns": ["Which city is called the Silicon valley of India", "Silicon valley of India"],
+         "responses": ["Bangalore"],
+         "context": [""]
+        },
+        {"tag": "facebook",
+         "patterns": ["Who invented facebook", "Facebook was invented by?"],
+         "responses": ["Mark Zuckerberg, Eduardo Saverin, Dustin Moskovitz and Chris Hughes"],
+         "context": [""]
+        },
+        {"tag": "nanomaterials",
+         "patterns": ["How small are nanomaterails? ", "How small are nano particles?" ],
+         "responses": ["Nanomaterials are up to 10 000 times smaller than the width of a human hair", "In the International System of Units, nano means one-billionth of a meter."],
+         "context": [""]
+        },
+        {"tag": "iot_devices",
+         "patterns": ["Name one iot device", "Give an example for a Iot"],
+         "responses": ["Smart Assistants", "Smart Cars", "Smart TV", "Smart Wearables"],
+         "context": [""]
+        },
+        {"tag": "google_ceo",
+         "patterns": ["Who is Google's first CEO?", "Google first CEO" ],
+         "responses": ["Eric Schmidt"],
+         "context": [""]
+        },
+        {"tag": "aws",
+         "patterns": ["What does AWS stand for?", "What is the full form of AWS?"],
+         "responses": ["Amazon Web Services"],
+         "context": [""]
+        },
+        {"tag": "cyber_warfare",
+         "patterns": ["What is a cyberwarfare?"],
+         "responses": ["Cyberwarfare is the use of technology to attack a nation, causing comparable harm to actual warfare"],
+         "context": [""]
+        },
+        {"tag": "lan",
+         "patterns": ["Full form of LAN", "What does LAN stand for?"],
+         "responses": ["Local Area Network"],
+         "context": [""]
+        },
+        {"tag": "facebook_year",
+         "patterns": ["Which year was facebook founded?", "facebook was founded in the year?" ],
+         "responses": ["2004"],
+         "context": [""]
+        },
+        {"tag": "sos",
+         "patterns": ["What is SOS?", "SOS fullform", "What are the phrases SOS full form associated with?"],
+         "responses": ["Save Our Souls", "Save Our Ship"],
+         "context": [""]
+        },
+        {"tag": "pink_city_india",
+         "patterns": ["Which city is called pink city of india?", "Pink city of India"],
+         "responses": ["Jaipur"],
+         "context": [""]
+        },
+        {"tag": "garden_city_india",
+         "patterns": ["Which city is called garden city of india?", "garden city of India"],
+         "responses": ["Bangalore"],
+         "context": [""]
+        },
+        {"tag": "wan",
+         "patterns": ["Full form of WAN", "What does WAN stand for?"],
+         "responses": ["Wide Area Network"],
+         "context": [""]
+        },
+        {"tag": "royal_mile",
+         "patterns": ["The Royal Mile is located in what city?", "What city is the Royal Mile located in?"],
+         "responses": ["Edinburgh"],
+         "context": [""]
+        },
+        {"tag": "populous_city_australia",
+         "patterns": ["Which is the most populous city in australia?", "most populous city in australia"],
+         "responses": ["Sydney"],
+         "context": [""]
+        },
+        {"tag": "arabian_sea_depth",
+         "patterns": ["How deep is Arabian Sea?", "Depth of Arabian Sea"],
+         "responses": ["15,262 feet"],
+         "context": [""]
+        },
+        {"tag": "country_q",
+         "patterns": ["Which is the only country name that starts with Q?", "Country name with Q" ],
+         "responses": ["Qatar"],
+         "context": [""]
+        },
+        {"tag": "united_country",
+         "patterns": ["How many countries begin with the word United?" ],
+         "responses": ["seven"],
+         "context": [""]
+        },
+        {"tag": "countryname_j",
+         "patterns": ["How many countries begin with the letter j?", "NUmber of countries with the first letter j"],
+         "responses": ["three"],
+         "context": [""]
+        },
+        {"tag": "worlds_youngest_country",
+         "patterns": ["Which is the world's youngest country?", "World's youngest country"],
+         "responses": ["South Sudan"],
+         "context": [""]
+        },
+        {"tag": "afghanistan_language",
+         "patterns": ["Name one langauge spoken in Afghanistan", "Name one language spoken by people of Afghanistan" ],
+         "responses": ["Dari", "Pashto"],
+         "context": [""]
+        },
+        {"tag": "country_fewest_trees",
+         "patterns": ["Which is the country with fewest trees?", "Fewest trees"],
+         "responses": ["Vatican city"],
+         "context": [""]
+        },
+        {"tag": "eiffel_tower",
+         "patterns": ["Where is the Eiffel Tower located?"],
+         "responses": ["Paris"],
+         "context": [""]
+        },
+        {"tag": "cloudcomputing_cons",
+         "patterns": ["What are the disadvantages of cloud computing?", "What are the cons of cloud computing?", "What are the negatives of cloud computing?"],
+         "responses": ["A constant internet connection is required, performance can be slow due to the number of users on the internet"],
+         "context": [""]
+        },
+        {"tag": "transistor",
+         "patterns": ["What is a transistor?"],
+         "responses": ["A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power"],
+         "context": [""]
+        },
+        {"tag": "microprocessor",
+         "patterns": ["What is a microprocessor?"],
+         "responses": ["A computer processor that incorporates the functions of a central processing unit on a single integrated circuit, or sometimes up to 8 integrated circuits"],
+         "context": [""]
+        },
+        {"tag": "ethernet",
+         "patterns": ["What is ethernet?"],
+         "responses": ["Family of computer networking technologies commonly used in local area networks, metropolitan area networks and wide area networks"],
+         "context": [""]
+        },
+        {"tag": "bootstrapping",
+         "patterns": ["What is bootstrapping?", "What is booting?"],
+         "responses": ["The process of starting a computer", "Refers to a self-starting process of computer that is supposed to proceed without external input"],
+         "context": [""]
+        },
+        {"tag": "tmux",
+         "patterns": ["What is a Tmux?"],
+         "responses": ["Tmux is a terminal multiplexer, an advanced tool for running multiple tasks on the command line.", "Tmux is a terminal multiplexer for Unix-like operating systems"],
+         "context": [""]
+        },
+        {"tag": "motherboard",
+         "patterns": ["What is a computer motherboard?", "What is a motherboard"],
+         "responses": ["The motherboard is a printed circuit board and foundation of a computer that is the biggest board in a computer chassis", "A motherboard provides connectivity between the hardware components of a computer, like the processor , memory, hard drive, and video card"],
+         "context": [""]
+        },
+        {"tag": "bits",
+         "patterns": ["What are bits?", "Define bits", "What is a binary digit?"],
+         "responses": ["A bit is the smallest unit of data in a computer. A bit has a single binary value, either 0 or 1", "The bit is a basic unit of information in information theory, computing, and digital communications"],
+         "context": [""]
+        },
+        {"tag": "modem",
+         "patterns": ["What is a modem?"],
+         "responses": ["A modem is a hardware device that converts data into a format suitable for a transmission medium so that it can be transmitted from one computer to another", "A combined device for modulation and demodulation, for example, between the digital data of a computer and the analog signal of a telephone line"],
+         "context": [""]
+        },
+        {"tag": "emails_to_spam",
+         "patterns": ["Why do emails go to spam?", "How do emails end up in spam?" ],
+         "responses": ["The Sender Information is Inaccurate.", "There is a large image with minimal text.", "There is incorrect spelling and grammer"],
+         "context": [""]
+        },
+        {"tag": "computer_virus",
+         "patterns": ["Why are computer viruses dangerous?", "why are computer viruses bad?", "why are computer viruses a thing?", "Why are viruses harmful to your computer?"],
+         "responses": ["A virus could encrypt files and demand payment to unlock them", "Viruses could give a hacker control to your computer", "Viruses could delete or corrupt files"],
+         "context": [""]
+        },
+        {"tag": "computer_security",
+         "patterns": ["Why is computer security important?", "Why do we need computer security?"],
+         "responses": ["Computer security is important because it keeps your information protected", "Computer security is important because a break in security can cause harmful and potentially major issues"],
+         "context": [""]
+        },
+        {"tag": "firewall",
+         "patterns": ["What is a computer firewall?", "What is a firewall?", "Define Firewall"],
+         "responses": ["The firewall is software that acts as the security systems to protect your computer system from the untrusted links from the networks like the internet", "a part of a computer system or network which is designed to block unauthorized access while permitting outward communication"],
+         "context": [""]
+        },
+        {"tag": "programming_language",
+         "patterns": ["Name one popular programming language", "Give an example for a programming language" ],
+         "responses": ["Java", "JavaScript", "Python", "Php", "R", "C"],
+         "context": [""]
+        },
+        {"tag": "web_cookies",
+         "patterns": ["What are cookies in technological terms?", "What is a cookie?", "What are cookies?", "What are web cookies?"],
+         "responses": ["A piece of code or data created by a web server and stored on a user's computer used to keep track of the user's usage patterns and preferences", "A cookie is the term given to describe a type of message that is given to a web browser by a web server. "],
+         "context": [""]
+        },
+        {"tag": "web",
+         "patterns": ["What is web?", "What is www?", "World Wide Web is defined as?"],
+         "responses": ["Information system where documents and other web resources are identified by URLs", "Part of the Internet that can be looked at with a special program called a browser and that is made up of many documents which are linked together", "A network of online content that is formatted in HTML and accessed via HTTP"],
+         "context": [""]
+        },
+        {"tag": "data_analysis",
+         "patterns": ["What is data analysis?", "What is analyzing data?", "How is Data Analysis defined?"],
+         "responses": ["Data analysis is a process of inspecting, cleansing, transforming and modeling data with the goal of discovering useful information, informing conclusion and supporting decision making."],
+         "context": [""]
+        },
+        {"tag": "cryptography",
+         "patterns": ["What is cryptography", "Describe cryptography", "What does cryptography mean"],
+         "responses": ["The art of writing or solving codes", "Practice and study of techniques for secure communication in the presence of third parties called adversaries", "Cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages"],
+         "context": [""]
+        },
+        {"tag": "walkman",
+         "patterns": ["First portable music device", "Which is the first portable music device?" ],
+         "responses": ["Walkman" ],
+         "context": [""]
+        },
+        {"tag": "radio",
+         "patterns": ["Radio Inventor", "Who invented Radio", "Radio was invented by?"],
+         "responses": ["Guglielmo Marconi"],
+         "context": [""]
+        },
+        {"tag": "intranet",
+         "patterns": ["What is intranet?", "Meaning of Intranet"],
+         "responses": ["Local or restricted communications network, especially a private network created using World Wide Web software", "Network operating like the World Wide Web but having access restricted to a limited group of authorized users such as employees of a company"],
+         "context": [""]
+        },
+        {"tag": "apple_founder",
+         "patterns": ["Who is the founder of Apple Computers?", "Founder of Apple Computers?", "Founder of Apple"],
+         "responses": ["Steve Jobs"],
+         "context": [""]
+        },
+        {"tag": "father_computer",
+         "patterns": ["Who is known as the father of Computers", "father of Computer", "Who is called the father of Computers", "Who is known the father of Computers"],
+         "responses": ["Charles Babbage"],
+         "context": [""]
+        },
+        {"tag": "quora",
+         "patterns": ["Which is the famous question and answer site founded in 2010" ],
+         "responses": ["Quora"],
+         "context": [""]
+        },
+        {"tag": "algorithm",
+         "patterns": ["What is an algorithm", "Describe algorithm"],
+         "responses": ["Self contained sequence of actions to be performed in computing and mathematics", "Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer", "Specific and logical procedure to be followed in order to achieve specific results, or to solve a math problem"],
+         "context": [""]
+        },
+        {"tag": "malware",
+         "patterns": ["What is malware?", "Describe Malware"],
+         "responses": ["Forms of intrusive computer software including viruses, spyware, worms, and Trojan horses", "Software intentionally designed to cause damage to a computer, server, client, or computer network"],
+         "context": [""]
+        },
+        {"tag": "undo_key",
+         "patterns": ["Which keyboard letter do we press with the control button to undo an action", "keyboard letter we press with the control button to undo an action", "Undo key"],
+         "responses": ["Z"],
+         "context": [""]
+        },
+        {"tag": "snapchat",
+         "patterns": ["Who created snapchat?", "Snapchat was created by?" ],
+         "responses": ["Evan Spiegel, Bobby Murphy, and Reggie Brown"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "nlu",
+         "patterns": ["What does NLU stand for?","Full form of NLP", "What is the full form of NLP?"],
+         "responses": ["Natural Language Understanding"],
+         "context": [""]
+        },
+        {"tag": "regular_expression",
+         "patterns": ["What is a regular expression?", "What is the meaning of regular expression?"],
+         "responses": ["A regular expression is a set of characters that describe a pattern in any text", "A regular expression is referred to a sequence of characters that define a search pattern"],
+         "context": [""]
+        },
+        {"tag": "training_set",
+         "patterns": ["What is training set?", "Meaning of Training set in nlp"],
+         "responses": ["The training set is the material through which the computer learns how to process information"],
+         "context": [""]
+        },
+        {"tag": "test_set",
+         "patterns": ["What is test set?", "Meaning of test set in nlp"],
+         "responses": ["A test set is used to test a machine learning program after it has been trained on an initial training data set."],
+         "context": [""]
+        },
+        {"tag": "validation_set",
+         "patterns": ["What is validation set?", "Meaning of Validation set in nlp"],
+         "responses": ["A validation set is a set of data used to train artificial intelligence with the goal of finding and optimizing the best model to solve a given problem"],
+         "context": [""]
+        },
+        {"tag": "first_mobile",
+         "patterns": ["Which is the first mobile company?", "Which is the first cellphone company?", "First company to produce mobile phones", "First company to produce cell phones"],
+         "responses": ["Motorola"],
+         "context": [""]
+        },
+        {"tag": "mexico",
+         "patterns": ["What is Mexico best known for?", "What is Mexico famous for?", "What is the best thing about Mexico?"],
+         "responses": ["Beaches and Resorts"],
+         "context": [""]
+        },
+        {"tag": "blue_sky",
+         "patterns": ["Why is the color of the sky blue", "Reason of blue color of sky", "Why is sky blue in color?" ],
+         "responses": ["Blue light is more strongly scattered than other colors"],
+         "context": [""]
+        },
+        {"tag": "ip",
+         "patterns": ["What is full form of IP?", "What does IP stand for?"],
+         "responses": ["Internet Protocol"],
+         "context": [""]
+        },
+        {"tag": "number_of_continents",
+         "patterns": ["How many continents are there?", "What is the total number of continents?"],
+         "responses": ["There are seven continents in the world"],
+         "context": [""]
+        },
+        {"tag": "covid",
+         "patterns": ["What is corona virus?", "What is covid 19?"],
+         "responses": ["Coronavirus disease COVID 19 is an infectious disease caused by a newly discovered coronavirus"],
+         "context": [""]
+        },
+        {"tag": "corona_virus_myths",
+         "patterns": ["Mention one of the myths about corona virus", "Name one of the corona virus myth"],
+         "responses": ["Spraying chlorine or alcohol on skin kills viruses in the body", "Only older adults and young people are at risk", "Children cannot catch COVID 19"],
+         "context": [""]
+        },
+        {"tag": "popular_suvs",
+         "patterns": ["Most popular suvs in America", "Which are the best cars in America?", "Name one popular car in America"],
+         "responses": ["Nissan Rogue", "Chevrolet Equinox", "Honda CR V", "Ford escape", "Jeep Wrangler"],
+         "context": [""]
+        },
+        {"tag": "biggest_mammal",
+         "patterns": ["Which is the biggest mammal in the world?", "Name the biggest mammal in the world" ],
+         "responses": ["Blue Whale"],
+         "context": [""]
+        },
+        {"tag": "blood_group",
+         "patterns": ["Name the blood groups", "Which are the human blood groups?"],
+         "responses": ["A+, A-,B+,B-,AB+,AB-,O+,O-"],
+         "context": [""]
+        },
+        {"tag": "smelliest_flower",
+         "patterns": ["Which is the smelliest flower in the world?"],
+         "responses": ["Corpse flower"],
+         "context": [""]
+        },
+        {"tag": "planet",
+         "patterns": ["How many planets are there?", "Number of planets"],
+         "responses": ["There are nine planets in the universe"],
+         "context": [""]
+        },
+        {"tag": "biggest_epic",
+         "patterns": ["Which is the biggest epic in the world?", "Which is the longest epic in the world?"],
+         "responses": ["Mahabharata"],
+         "context": [""]
+        },
+        {"tag": "oldest_civilisation",
+         "patterns": ["Who is the oldest civilisation?"],
+         "responses": ["Mesopotamia Civilisation"],
+         "context": [""]
+        },
+        {"tag": "african_tip",
+         "patterns": ["What is african tip known as?", "What is the tip of Africa known as?"],
+         "responses": ["Cape of Good Hope"],
+         "context": [""]
+        },
+        {"tag": "photosynthesis",
+         "patterns": ["What is photosynthesis?", "Define photosynthesis"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        {"tag": "number_bones",
+         "patterns": ["How many bones does an adult have?", "Number of bones in a human body?" ],
+         "responses": ["213"],
+         "context": [""]
+        },
+        {"tag": "vibgyor",
+         "patterns": ["Colors in VIBGYOR", "VIBGYOR", "colors in rainbow" ],
+         "responses": ["Violet, Indigo, Blue, Green, Yellow, Orange and Red"],
+         "context": [""]
+        },
+        {"tag": "artificial_intelligence",
+         "patterns": ["What is artificial intelligence?", "What is the meaning of artificial intelligence?"],
+         "responses": ["Artificial intelligence, sometimes called machine intelligence, is intelligence demonstrated by machines"],
+         "context": [""]
+        },
+        {"tag": "multiple_regression_analysis",
+         "patterns": ["What does multiple regression analysis do?", "What does multiple regression analysis tell you?"],
+         "responses": ["multiple linear regression analysis helps us to understand how much will the dependent variable change when we change the independent variables"],
+         "context": [""]
+        },
+        {"tag": "machine_translation",
+         "patterns": ["What is machine translation?", "What does machine translation mean?"],
+         "responses": ["It is a sub field of computational linguistics that investigates the use of software to translate text or speech from one language to another."],
+         "context": [""]
+        },
+        {"tag": "sentiment_analysis ",
+         "patterns": ["What is sentiment analysis?", "What does sentiment analysis mean?"],
+         "responses": ["The use of Natural Language Processing techniques to extract subjective information from a piece of text. i.e. whether an author is being subjective or objective or even positive or negative"],
+         "context": [""]
+        },
+        {"tag": "corpus",
+         "patterns": ["What is a corpus?", "What is corpus in nlp?"],
+         "responses": ["Text corpus is a large and structured set of texts nowadays usually electronically stored and processed"],
+         "context": [""]
+        },
+        {"tag": "stemming",
+         "patterns": ["What is stemming?", "stemming", "stemming meaning", "What is meant by stemming?"],
+         "responses": ["With stemming, words are reduced to their word stems"],
+         "context": [""]
+        },
+        {"tag": "normalization",
+         "patterns": ["What is normalization?", "normalization", "normalization meaning", "What is meant by normalization?"],
+         "responses": ["Normalization is a process that converts a list of words to a more uniform sequence"],
+         "context": [""]
+        },
+        {"tag": "tokenization",
+         "patterns": ["What is tokenisation?", "Tokenisation", "Tokenisation meaning", "What is meant by tokenisation?"],
+         "responses": [" It is basically a task of chopping a character into pieces, called as token, and throwing away the certain characters at the same time, like punctuation", "Tokenization is the process of replacing sensitive data with unique identification symbols that retain all the essential information about the data without compromising its security"],
+         "context": [""]
+        },
+        {"tag": "simple_linear_regression",
+         "patterns": ["What is simple linear regression?"],
+         "responses": ["It establishes the relationship between two variables using a straight line"],
+         "context": [""]
+        },
+        {"tag": "stop_words",
+         "patterns": ["What are stop words?", "meaning of stop words"],
+         "responses": ["In computing, stop words are words which are filtered out before or after processing of natural language data"],
+         "context": [""]
+        },
+        {"tag": "nlp",
+         "patterns": ["What does nlp stand for?", "Full form of nlp"],
+         "responses": ["natural language processing" ],
+         "context": [""]
+        },
+        {"tag": "pandemic",
+         "patterns": ["What is a pandemic?", "Define Pandemic", "What does a pandemic mean?"],
+         "responses": ["A disease prevalent over a whole country or the world" ],
+         "context": [""]
+        },
+        {"tag": "ms_office_programs",
+         "patterns": ["List a few MS Office programs", "What are few MS office programs?" ],
+         "responses": ["Access, Excel, Outlook, Word, Powerpoint" ],
+         "context": [""]
+        }
+   ]
+}
